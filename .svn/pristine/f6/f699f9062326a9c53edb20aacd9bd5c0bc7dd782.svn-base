@@ -1,0 +1,426 @@
+<?php if (!defined('THINK_PATH')) exit();?><nav class="navbar navbar-default my-nav" role="navigation">
+  <div class="container-fluid">
+  <div class="navbar-header nav-header col-md-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a href="/cloud/index.php" style="cursor: pointer;">
+        <img src="<?php echo (URL); ?>img/logo.png"  alt="AIB-云平台">
+      </a>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="collapse navbar-collapse nav-content col-md-9" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+          <li><a href="/cloud/index.php">首页</a></li>
+          <li class="dropdown" id="hoverdown-1">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" >
+                  云计算小组 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  AIB云平台 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-3">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  服务与支持 <b class="caret"></b>
+              </a>
+          </li>
+          <li><a href="/cloud/index.php/home/index/deveProg">开发历程</a></li>
+          <li><a href="/cloud/index.php/home/index/touchUs">联系我们</a></li>
+          <li>
+            <div class="input-group" style="cursor: pointer;margin:10px 20px; width:12vw;">
+                <input type="text" class="form-control" style="height:25px;">
+                <span class="input-group-addon" style="height:25px; font-size: 8px; padding:0 8px;">搜索</span>
+            </div>
+          </li>
+   <?php if(empty($_SESSION['username'])): ?><li><a href="/cloud/index.php/admin/login/login" class="login">登陆</a></li>
+        <li><a href="/cloud/index.php/admin/login/register" class="login">注册</a></li>
+     
+ <?php else: ?>
+            <li class="dropdown" style="width:80px;">
+                    <div  class="dropdown-toggle" data-toggle="dropdown">
+                       <img src="/cloud/application/admin/public/uploadImg/<?php echo (session('username')); ?>.png" class="img-circle" style="width:36px; height:36px;  margin: 5px 10px; cursor: pointer;">
+                    </div>
+          <?php if($_SESSION['level']==2): ?><ul class="dropdown-menu">
+                       <li><a href="/cloud/index.php/admin/stu/servAppl" class="login">个人中心</a></li>
+                       <li><a href="/cloud/index.php/admin/stu/stuMessage" class="login">个人网站</a></li>
+                       <li><a href="/cloud/index.php/admin/stu/persInfo" class="login">修改资料</a></li>
+                       <li><a href="/cloud/index.php/admin/login/end" class="login" id="over">退出</a></li>
+                   </ul>
+          <?php elseif($_SESSION['level']==1): ?>
+                     <ul class="dropdown-menu">
+                       <li><a href="/cloud/index.php/admin/tea/teaCenter" class="login">个人中心</a></li>
+                       <li><a href="/cloud/index.php/admin/tea/persInfo" class="login">修改资料</a></li>
+                       <li><a href="/cloud/index.php/admin/login/end" class="login" id="over">退出</a></li>
+                   </ul><?php endif; ?>
+                </li><?php endif; ?>
+
+      </ul>
+      <div class="back" style="height: 3px; background-color: #0CF;  position: absolute; bottom: 1.8px; left:15px; width:65px;"></div>
+  </div>
+
+  </div>
+
+
+
+  <section id="showdown-1">
+    <ul>
+      <li class="lead">小组介绍</li>
+      <li><a href="/cloud/index.php/Home/team/teamInfo">团队介绍</a></li>
+      <li><a href="/cloud/index.php/Home/team/joinus">加入我们</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">团队Team</li>
+      <li><a href="/cloud/index.php/Home/team/team">指导老师</a></li>
+      <li><a href="/cloud/index.php/Home/team/team">小组成员</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-2">
+    <ul>
+      <a href="/cloud/index.php/Home/platform/platform">
+        <li class="lead">平台入口</li>
+      </a>
+      <li><a href="/cloud/index.php/admin/openstack/openstack">OpenStack</a></li>
+      <li><a href="/cloud/index.php/admin/vsphere/vsphere">vSphere</a></li>
+      <li><a href="/cloud/index.php/admin/Docker/docker">Docker</a></li>
+      <li><a href="/cloud/index.php/admin/mirrors/mirrors">CentOS</a></li>
+      <li><a href="/cloud/index.php/admin/SVN/subversion">SVN</a></li>
+      <li><a href="/cloud/index.php/admin/lanDisk/onlineDisk">内网云盘</a></li>
+      <li><a href="/cloud/index.php/admin/Mail/mail">邮件系统</a></li>
+      <li><a href="/cloud/index.php/admin/stu/stuIndex">学生站点</a></li>
+      <li>微信小程序</li>
+    </ul>
+
+    <ul>
+      <li class="lead">平台架构</li>
+      <li><a href="/cloud/index.php/Home/platform/platformFrame">底层硬件架构</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-3">
+    <ul>
+      <li class="lead">用户服务</li>
+      <li><a href="/cloud/index.php/Admin/ServerHelp/notice">服务公告</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">帮助中心</li>
+      <li><a href="/cloud/index.php/Admin/ServerHelp/document">文档</a></li>
+    </ul>
+  </section>
+
+</nav>
+
+<style type="text/css">
+  nav section{
+    position: absolute;top:53px;min-width:200px;min-height: 200px;transform:translateX(-50%);left:50%;display: flex;justify-content: center;color: white;background: rgba(0, 0, 0, 0.8);font-size: 1.5rem;padding:20px;visibility: hidden;
+  }
+  nav section ul{
+    float: left;width:150px;margin-left:7vw; padding:0;color: rgba(255,255,255,0.6);
+  }
+  nav section ul:last-child{
+    margin-right: 7vw;
+  }
+  nav section ul .lead{
+    font-size: 1.5rem !important;margin:0 !important;font-weight: bold; border-bottom:1px solid rgba(255,255,255,0.6);color: white;padding-bottom: 5px;
+  }
+  nav section ul a .lead:hover{
+    color: red;
+    cursor: pointer;
+  }
+  nav section ul a{
+    color: rgba(255,255,255,0.6);
+  }
+  nav section ul a:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav section ul li{
+    margin: 0;
+    padding-top: px;
+    list-style: none;
+  }
+  nav section ul li:nth-child(2){
+    margin-top: 5px;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AIB云平台</title>
+    <link rel="stylesheet" href="<?php echo (URL); ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo (URL); ?>public.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo (URL); ?>css/deve-prog.css">
+
+</head>
+
+<body>
+
+
+    <div id="arrow">
+            <ul>
+                <li class="arrowup"></li>
+                <li class="arrowdown"></li>
+            </ul>
+        </div>
+
+        <div id="history" style="height: 90vh;">
+
+            <div class="title">
+                <h2 style="font-weight: bold;">站点成长史</h2>
+                <div id="circle">
+                    <div class="cmsk"></div>
+                    <div class="circlecontent">
+                        <div thisyear="2017" class="timeblock">
+                            <p style="color: rgb(107, 195, 13); font-weight: bold; font-size: 24px;position: absolute;top:-15px;left:8px;">2017</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="timeyear">YEAR</div>
+                    </div>
+                    <a href="#" class="clock" style="position:absolute;top:-5px;left:-5px;"></a>
+                </div>
+            </div>
+
+            <div id="content">
+                <ul class="list">
+                    <li style="margin-top:-110px;">
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">April</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt" ><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">服务器配置升级、交换机连接</a></div>
+                                <div class="hisct">修正了上一版本中的错误，欢迎大家测试，如果发现问题请联系我们,谢谢。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">April</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">OpenStack、vSphere的部署</a></div>
+                                <div class="hisct">随着用户的访问量增大,功能不能满足需求，我们进行了重大更新，对设计和功能都进行大幅度的升级,增加了原创，欣赏版块</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">July 23</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt" style="font-size: 10px; "><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点底层数据的处理——Shell脚本的编写</a></div>
+                                <div class="hisct">推出了HTML5 CSS3 官方微博</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">July 25</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台架构设计——分布式、高可用、负载均衡</a></div>
+                                <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 11</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台网站设计——初步框架排版、素材收集、logo制作</a></div>
+                                <div class="hisct">在集体探讨下，发现目前的HTML5 CSS3 发展历程已经不能满足需求，集体讨论=，这时候，韩老师之前的设计稿被端上了会议桌。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 19</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">OpenStack、vSphere、SVN、Docker、CentOS软件源、邮件系统的基本页面排版设计</a></div>
+                                <div class="hisct">某天晚上的凌晨三点一刻，预想建立这样一个功能的网站，专为网页设计师。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 21</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点页面框架设计——个人中心、对外展示页面、教师管理中心</a></div>
+                                <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 25</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点——管理后台应用的修改</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 27</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点后端结构设计——评分、评优、留言、学生用户数据的导入</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 04</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台网站设计——优化代码、页面</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 10</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">登陆、注册、个人中心的页面设计、导航优化设计</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 12</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台外网IP的申请、网速升级</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    <script src="<?php echo (URL); ?>js/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo (URL); ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo (URL); ?>js/public.js"></script>
+
+    <script src="<?php echo (URL); ?>js/jquery.mousewheel.js"></script>
+    <script src="<?php echo (URL); ?>js/jquery.easing.js"></script>
+    <script src="<?php echo (URL); ?>js/deveProg.js"></script>
+</body>
+
+</html>
+
+<footer style="position: relative;">
+    <span>Builder：<a href="">AIB云计算小组</a></span>
+    <span>Copyright © 2017 <a href="">AIB云计算小组</a></span>
+</footer>

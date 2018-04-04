@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>学生个人中心</title>
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script src="{$Think.const.URL}js/public.js"></script>
+<style>
+	img,
+	body {
+	    overflow: hidden;
+	    margin: 0;
+	}
+	article{
+		width: 80vw; 
+		margin: 0 auto;
+		position: relative;
+	}
+	article div{
+		overflow: auto;
+	}
+	article h3{
+		font-size: 2.4rem;
+		height: 40px;
+		margin: 0;
+		margin-top: 5vh;
+		display:inline-block;
+		min-width: 150px;
+		border-bottom: 2px solid green;
+	}
+	article nav{
+		margin-top: 5vh;
+	}
+	article nav div{
+		height: 40px;
+	}
+	article nav button{
+		font-size: 1.5rem;
+	}
+	article nav span{
+		margin-left: 2vw;
+		cursor: pointer;
+		/* color: #E29920; */
+		border: 1px solid #E29920;
+		padding: 5px;
+		font-size: 1.5rem;
+	}
+	article nav span:hover{
+		border: 1px solid #E29920;
+		border-radius: 8px;
+	}
+	.on{
+		/* margin-top: -10px; */
+		border: 1px solid green;
+		font-weight: bold;
+		color: green;
+	}
+	article .stu_i_container{
+		width: 80vw;
+		overflow: hidden;
+	}
+	article .stu_i_container:nth-child(2){
+		height: 40vh;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.stu_i_container .stu_i_item{
+		min-width: 18vw;
+		height: inherit;
+		margin: 4vh 1vw;
+		float: left;
+	}
+	.stu_i_item img{
+		width: 18vw;
+		height: 150px;
+		display: flex;
+    	justify-content: space-around;
+
+	}
+	.stu_i_item h4{
+		font-size: 16px;
+		margin: 0;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.stu_i_item div{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		background: #D4D4D4;
+		opacity: 1;
+		transition: all 0.5s ease-in-out;
+		overflow: hidden;
+	}
+	.stu_i_item:hover div{
+		opacity: 0;
+	}
+	.stu_i_item div span:last-child::before{
+		content: url('{$Think.const.URL}img/dialogue.png');
+	}
+	.stu_i_item div span:first-child::before{
+		content: url('{$Think.const.URL}img/eye.png');
+	}
+	@media screen and (max-width: 768px){
+		.stu_i_container .stu_i_item{
+			width: 24vw;
+			height: inherit;
+			margin: 2vh 1vw;
+			float: left;
+		}
+	}
+
+	/***************/ 
+        .pages a,  
+        .pages span {  
+            display: inline-block;  
+            padding: 2px 5px;  
+            margin: 0 1px;  
+            border: 1px solid #f0f0f0;  
+            -webkit-border-radius: 3px;  
+            -moz-border-radius: 3px;  
+            border-radius: 3px;  
+        }  
+          
+        .pages a,  
+        .pages li {  
+            display: inline-block;  
+            list-style: none;  
+            text-decoration: none;  
+            color: #58A0D3;  
+        }  
+          
+        .pages a.first,  
+        .pages a.prev,  
+        .pages a.next,  
+        .pages a.end {  
+            margin: 0;  
+        }  
+          
+        .pages a:hover {  
+            border-color: #50A8E6;  
+        }  
+          
+        .pages span.current {  
+            background: #50A8E6;  
+            color: #FFF;  
+            font-weight: 700;  
+            border-color: #50A8E6;  
+        }  
+     /*********************/
+
+
+	.nav-tabs{
+		border: none;
+	}
+     .nav-tabs li{
+     	float: left;
+      	text-align: center;
+      	margin-right: 20px;
+      }
+     .nav-tabs li a{
+      	display: block;
+      	font-size: 16px;
+      	font-weight: 600;
+      	color: #444;
+      	padding: 10px 15px;
+      	text-decoration: none;
+      	background: transparent;
+      	margin-right: 0;
+      	border: none;
+      	border-radius: 0;
+      	overflow: hidden;
+      	position: relative;
+      	z-index: 1;
+      	transition: all 0.5s ease 0s;
+      }
+     .nav-tabs li a:before{
+      	content: "";
+      	width: 100%;
+      	height: 3px;
+      	background: #de7921;
+      	position: absolute;
+      	top: 92%;
+      	left: 0;
+      	transition: all 0.3s ease 0s;
+      }
+     .nav-tabs li a:hover:before,
+     .nav-tabs li.active a:before,
+     .nav-tabs li.active a:hover:before{
+      	top: 0;
+      }
+     .nav-tabs li a:after{
+      	content: "";
+      	width: 100%;
+      	height: 100%;
+      	background: #fff;
+      	position: absolute;
+      	top: 100%;
+      	left: 0;
+      	z-index: -1;
+      	transition: all 0.3s ease 0s;
+      }
+     .nav-tabs li a:hover:after,
+     .nav-tabs li.active a:after,
+     .nav-tabs li.active a:hover:after{
+      	top: 0;
+      }
+      .nav-tabs li.active a,
+      .nav-tabs li.active a:focus,
+      .nav-tabs li.active a:hover,
+      .nav-tabs li a:hover{
+      	border: none;
+      }
+</style>
+
+</head>
+<body style="background: none; overflow-y: auto;overflow-x: hidden;">
+
+	<article>
+		<h3 class="col-md-2">优秀作品</h3>
+		<div class="stu_i_container good_job">
+		<foreach name="youxiu" item="y" >
+			<a href="__CONTROLLER__/stuMessage/id/{$y.id}"><div class='stu_i_item' name='userid'><img src="<?php echo file_exists(iconv('UTF-8','GB2312',"./application/admin/public/uploadImg/".$y['username']."w.png"))?"/cloud/application/admin/public/uploadImg/".$y['username']."w.png":'/cloud/application/admin/public/uploadImg/0w.png'; ?>"><h4>{$y.username}—{$y.netname}</h4><div><span>访问次数({$y.view})</span><span>留言次数({$y.comment})</span></div></div></a>
+		</foreach>
+		</div>
+	</article>
+	<article class="stu_article">
+		<h3 class="col-md-2">学生作品</h3>
+		<nav class="col-md-10">
+			<div class="form-group col-md-5">
+				<input type="text" id="sear_condition">
+				<button id="search">搜索</button>
+			</div>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="__CONTROLLER__/stuIndex/flag/1">网络1班</a></li>
+				<li><a href="__CONTROLLER__/stuIndex/flag/2">网络2班</a></li>
+				<li><a href="#" title="">其他</a></li>
+			</ul>
+			
+		</nav>
+		<div class="stu_i_container stu_job_gra1">
+			<foreach name="list" item="res" >
+			<a href="__CONTROLLER__/stuMessage/id/{$res.id}"><div class='stu_i_item' name='userid'><img src="<?php echo file_exists(iconv('UTF-8','GB2312',"./application/admin/public/uploadImg/".$res['username']."w.png"))?"/cloud/application/admin/public/uploadImg/".$res['username']."w.png":'/cloud/application/admin/public/uploadImg/0w.png'; ?>"/><h4>{$res.username}—{$res.netname}</h4><div><span>点击次数({$res.view})</span><span>留言次数({$res.comment})</span></div></div></a>
+			</foreach>
+		</div>
+		<ul id='paging' class="pagination pagination-lg" style="display: flex; justify-content: center;">
+		</ul>
+	</article>
+
+<div class="pages text-center"> {$page} </div>
+
+
+<div style="height:50px;"></div>
+    </div>
+    
+	<script type="text/javascript">
+
+	/*-----  判断内容是否为空  ------*/
+		function isEmpty($name,$text){
+			var eleCont = $($name).text().trim();
+			if( eleCont == "" ){
+			var temp = '<div style="text-align:center; font-size:2rem; letter-spacing:10px;margin:7vh 0;" class="text-muted">'+
+				$text+
+				'</div>';
+			$($name).html(temp);
+			}
+		}
+	/*-----  无缝滚动  ------*/
+		var mq = window.matchMedia('@media all and (max-width: 768px)');
+		if(mq.matches) {
+		    // 浏览器宽度大于768
+		    var timer;
+		    function scroll(wid){
+		    	$('.good_job .stu_i_item:eq(0)').animate({"margin-left":"-18vw"},function(){
+		    		$('.stu_i_item').eq(0).appendTo('.stu_i_container:eq(0)');
+		    		$('.stu_i_item').css({"margin-left":"1vw"});
+		    	})
+		    }
+		    timer=setInterval(scroll,2000);
+		} else {
+		    var timer;
+		    function scroll(){
+		    	$('.good_job  .stu_i_item:eq(0)').animate({"margin-left":"-24vw"},function(){
+		    		$('.stu_i_item').eq(0).appendTo('.stu_i_container:eq(0)');
+		    		$('.stu_i_item').css({"margin-left":"1vw"});
+		    	})
+		    }
+		    timer=setInterval(scroll,2500);
+		}
+		/*----- 开始js操作  -----*/
+		$(document).ready(function(){
+
+			/*-----  判断滚动  -----*/
+				$('.stu_i_container:eq(0)').on({
+					mouseover:function(){
+						clearInterval(timer);
+					},
+					mouseout:function(){
+						timer=setInterval(scroll,2000);
+					}
+				})
+			/*-----  点击显示不同分类的学生作品  -----*/
+				$('.stu_article nav span').click(function(){
+					$(this).addClass("on").siblings('span').removeClass("on");
+					var index=$(this).index();
+					$('.stu_article>div').eq(index).show().siblings("div").hide();
+				//点击搜索
+			});
+		})
+	</script>
+</body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

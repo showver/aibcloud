@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AIB网络工作室 - 云平台 - Docker镜像仓库</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+    <div id="wrapper" style="height: 90vh;">
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">AIB网络工作室 - 云平台 - <b>Docker镜像仓库</b></h2>
+            <a href="" title="一个开源的应用容器引擎">一个开源的应用容器引擎</a>
+        </div>
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>什么是Docker？</h2>
+                <table>
+                    <thead align="left">
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</td>
+                    </tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;太专业，还是不懂？</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比如你用的是Ubuntu，服务器用的是CentOS，那么此时你要把项目部署到服务器上，可能在环境的配置上就要花费不少的时间了。又或者比
+						如你用的MySQL，放在以前每次重装一次系统或者换一个环境，你就要把你的环境重装一次，东西越多花费的时间越多。
+						而使用Docker，你只需要一条命令，你就可以在你的Ubuntu上再运行一个“新的环境”，当然这一个环境还是基于你现有的环境的，也就是说实际上共享的还是同一套资源，
+						但是这套环境里面已经有了你需要的东西。
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你需要MySQL，那就安装一个带MySQL的镜像， 然后启动一个容器。</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你需要Redis，那就安装一个带Redis的镜像， 然后启动一个容器。</td>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你需要..., 那就...， 然后...。 </td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然你也可以在别人的基础之上，对容器进行修改后，比如添加了一些你自己的软件或修改配置文件，然后再commit，这样你就把这个容器制作成了一个镜像，以后你可以用这个镜像创建出N个一模一样的容器。
+						比如你要学习搭载Redis集群，那么你可以下载一个Redis的镜像，然后启动容器，把集群的配置设置好后，提交这个容器生成镜像，再根据这个镜像运行出6个或更多容器，这样一个集群就搭起来了。
+						而且Docker占用的资源很小。</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更详细的请见：<a href="http://server.zol.com.cn/535/5355822_all.html">千万别说你不了解Docker</a></td>
+					</tr>
+                    </thead>
+                </table>
+				<h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-bell icon-large" style="margin:0 10px; color: black;"></i>Docker的优点</h2>
+				<table>
+                    <thead align="left">
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、简化程序：Docker 让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，
+						然后发布到任何流行的 Linux 机器上，便可以实现虚拟化。Docker改变了虚拟化的方式，使开发者可以直接将自己的成果放入Docker中进行管理。
+						方便快捷已经是 Docker的最大优势，过去需要用数天乃至数周的任务，在Docker容器的处理下，只需要数秒就能完成。</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、避免选择恐惧症：如果你有选择恐惧症，还是资深患者。Docker 帮你	打包你的纠结！比如 Docker 镜像；Docker 镜像中包含了运行环境和配置，
+						所以 Docker 可以简化部署多种应用实例工作。比如 Web 应用、后台应用、数据库应用、大数据应用比如 Hadoop 集群、消息队列等等都可以打包成
+						一个镜像部署。</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、节省开支：一方面，云计算时代到来，使开发者不必为了追求效果而配置高额的硬件，Docker 改变了高性能必然高价格的思维定势。
+						Docker 与云的结合，让云空间得到更充分的利用。不仅解决了硬件管理的问题，也改变了虚拟化的方式。</td>
+                    </tr>
+					<tr><td><img src="{$Think.const.URL}img/dvcontrast.png" alt="Docker" style="margin-bottom:10px;" width="660" height="210"/></td></tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="siderbar">
+				<h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>仓库拉取教程</h4>
+				<p>
+                目前AIB网络工作室Docker镜像仓库提供了centos、ubuntu、mysql、php等等仓库，您可以使用命令：<br />
+				docker search aibcloud.org:5000/centos<br />
+				查询您想要的镜像是否在服务器中。<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;假如您想获得php的镜像文件，可以使用命令：<br />
+				docker pull aibcloud.org:5000/php<br />
+				拉取到本地。<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详细可参考：<a href="https://yeasy.gitbooks.io/docker_practice/content/">Docker从入门到实践</a>
+				</p>
+
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+				<ul>
+					<li><a href="http://www.miecu.net" target="_black">觅库</a></li>
+					<li><a href="http://www.gdaib.edu.cn" target="_black">GDAIB</a></li>
+				</ul> 
+				<a href="https://www.docker.com/"><img src="{$Think.const.URL}img/docker2.jpg" alt="Docker" /></a>
+			</div>
+		</div>
+	</div>
+
+	<div style="height:70px;clear:both;">
+        
+    </div>
+
+</body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

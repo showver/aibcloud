@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>XXXXX云平台</title>
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+
+<style type="text/css">
+    ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .container{
+        width: 80vw;
+        margin: 0 auto;
+        background: whitesmoke;
+    }
+    .pers_info>ul{
+        box-shadow: 0 0 6px gray;
+        background: white;
+        margin-left: -15px;
+    }
+    .pers_info>ul>li{
+        margin:10px;
+        padding: 10px;
+    }
+    .pers_info>ul>li img{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .pers_info>ul>li div{
+        height: 100px;
+        display: table-cell;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+    .pers_info .info_list{
+        font-size: 1.6rem;
+    }
+    .pers_info .info_list li{
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 2px;
+    }
+    .pers_info .info_list li:hover{
+        background: lightgrey;
+    }
+    .pers_info .info_list li i{
+        margin: 0 20px;
+    }
+
+    .pers_content{
+        height: 500px;
+        background: white;
+        margin: 10px 0;
+        padding: 20px; 
+        border: 1px solid lightgray;
+    }
+    .pers_content section{
+        margin: 20px 10px;
+
+
+    }
+    .pers_content section h4{
+        position: absolute;
+        top: -12px;
+        left: 10px;
+        background: white;
+    }
+    .pers_content section div{
+        position: relative;
+    }
+    .pers_content section div span{
+        position: absolute;
+        right:1.6vw;
+        top:32px;
+    }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="container" style="height:100vh;">
+        <section class="col-sm-4 pers_info">
+            <ul>
+                <li class="row">
+                    <img src="{$Think.const.URL}img/member_270x210.jpg" class="img-circle">
+                    <div>
+                        <!-- <i class="icon icon-edit"> -->
+                        <h4>青青草</h4>
+                        <p class="text-muted">加入时间&nbsp;2017.9.11</p>
+                    </div>
+                </li>
+                <ul class="info_list">
+                    <a href="./servAppl"><li>
+                        <i class="icon icon-cog"></i>个人中心
+                    </li></a>
+                    <li style="background: lightgrey;">
+                        <i class="icon icon-user"></i>修改网站
+                    </li>
+                    <li>
+                        <i class="icon icon-user"></i>修改资料
+                    </li>
+                    <li>
+                        <i class="icon icon-lock"></i>修改密码
+                    </li>
+                    <li>
+                        <i class="icon icon-github-alt"></i>修改头像
+                    </li>
+                </ul>
+
+            </ul>
+        </section>
+        <section class="col-sm-8 pers_content">
+            <section>
+
+            </section>
+            <section>
+                <h4>修改网站</h4>
+                <form action="" class="form-group">
+                    <div class="form-group">
+                        <label for="">网站名称</label>
+                        <input type="text" class="form-control" autofocus required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">网站描述</label>
+                        <textarea name="" style="resize: none; " class="form-control" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label >网站缩略图</label>
+                        <div>
+                            <img class="img" id="preview1" src="" style="width:150px;height: 150px;float: left;">
+                            <div style="height:15vw; padding-top: 2vh; padding-left: 1vw; display: flex; flex-flow: column; align-content: center; color: red">
+                                <p><b> Tips：</b></p>
+                                <p>上传的图片只能是jpg,png,jpeg,gif </p>
+                                <p>图片大小最大为2MB</p>
+                                <input type="file" id="f1" name="slt" value="浏览" style="float: left;width: 15vw;"  onchange="change('preview1', 'f1')">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success">更新</button>
+                </form>
+            </section>
+
+
+            <section style="display: none">
+                <h4>修改资料</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="xh">注册学号<small class="text-danger">（不可更改）</small></label>
+                        <input type="text" class="form-control" name="xh" placeholder="20155528125" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="hm">手机号码</label>
+                        <input type="text" class="form-control" name="hm" placeholder="更改你的联系方式" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="qq">QQ</label>
+                        <input type="text" class="form-control" name="qq" placeholder="请输入你的QQ">
+                    </div>
+                    <div class="form-group">
+                        <label for="ms">个人描述</label>
+                        <textarea class="form-control" name="ms" placeholder="输入你的描述" style="resize: none;"></textarea>
+                    </div>
+                </form>
+                <button class="btn btn-success">提交</button>
+            </section>
+
+
+            <section style="display: none;">
+                <h4>修改密码</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="mm">原密码</label>
+                        <input type="password" class="form-control" name="mm" placeholder="输入你的原密码" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cmm">新密码</label>
+                        <input type="password" class="form-control" name="cmm" placeholder="新密码不能与原密码相同">
+                    </div>
+                    <div class="form-group">
+                        <label for="rmm">确认密码</label>
+                        <input type="password" class="form-control" name="rmm" placeholder="确认密码与新密码保持一致">
+                    </div>
+                </form>
+                <button class="btn btn-success">提交</button>
+            </section>
+
+
+            <section style="display: none;">
+                <h4>修改头像</h4>
+                <form>
+                    <div class="form-group">
+                        <label>个人头像</label>
+                        <div>
+                            <img class="img img-circle" id="preview2" src="<?php echo '{$Think.const.URL}'.$dheadshot;?>" style="width:150px;height: 150px;float: left;">
+                            <div style="height:15vw; padding-top: 2vh; padding-left: 1vw; display: flex; flex-flow: column; align-content: center;color: red">
+                                <p><b> Tips：</b></p>
+                                <p>上传的图片只能是jpg,png,jpeg,gif </p>
+                                <p>图片大小最大为2MB</p>
+                                <input type="file" id="f2" name="tx" style="float: left;width: 15vw;" onchange="change('preview2', 'f2')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success">更改</button>
+                    </div>
+                </form>
+            </section>
+
+        </section>
+    </div>
+
+
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script src="{$Think.const.URL}js/public.js"></script>
+<script type="text/javascript">
+ 
+    $(document).ready(function(){
+    /*-----  pers_content  -----*/
+        $('.info_list li').click(function(){
+            var index = $(this).index();
+            $(this).css('background','lightgrey');
+            $(this).siblings('li').css('background','');
+            $('.pers_content section').eq(index).show();
+            $('.pers_content section').eq(index).siblings('section').hide();
+        });
+
+
+        //   验证手机号
+        zzyz('input[name="hm"]', /^1[34578]\d{9}$/, '验证成功', '请输入合法的手机号码');
+
+        // 验证第二次输入的密码
+        zzyz('input[name="rmm"]', 'input[name="mm"]', '验证成功', '与上次密码不一致');
+
+        //验证上传的图片
+        zzyz('input[name="tx"]', /\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/, '验证成功', '请上传头像');
+
+        //验证网站缩略图
+        zzyz('input[name="slt"]', /\.(gif|jpg|jpeg|png|GIF|JPG|PNG)$/, '验证成功', '请上传头像');
+
+        // var reg = false;
+
+        $('.pers_content section button').click(function(){
+            // alert($('input[name="tx"]').val());
+
+            if( reg == true ){
+                $(this).submit();
+                alert("提交成功");
+            }else if( reg == false ){
+                alert("请检查你的输入是否正确");
+                return false;
+            }
+        })
+
+
+
+    });
+</script>
+</body>
+
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

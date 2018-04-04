@@ -1,0 +1,33 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class LoginController extends Controller {
+   public function login(){
+		$this->display();
+   }
+   
+   public function register(){
+	 if(!empty($_POST)){
+		$User = M('User');
+		$result = $User->data($_POST)->add();
+		if($result!=0){
+		$this->redirect('register',array(),'2','添加数据成功');
+		}else{
+		echo 0;
+		}
+		
+	  }else{
+		$this->display();
+	  }
+   }
+
+   public function forgot(){
+		$this->display();
+   }
+
+   public function perInfo(){
+		$this->display();
+   }
+
+
+}

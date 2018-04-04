@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>技术支持</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+
+    <div id="wrapper" style="height: 100vh;">
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">技术文档</h2>
+            <a href="http://aibcloud.org/" title="你可以参考这里的技术文档">你可以参考这里的技术文档</a>
+        </div>
+
+<!-- <div id="navbar" style=" margin:5px auto;margin-bottom:10px;background: #CCFFFF;height:50px;">
+    <ul>
+        <li><a href="http://aibcloud.org/">主页</a></li>
+        <li><a href="">关于</a></li>
+    </ul>
+</div> -->
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>文档列表</h2>
+
+                <table class="file-table">
+                    <thead  align="center">
+                    <tr>
+                        <th>文档名称</th>
+                        <th class="text-center">最后更新时间</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="list" item="r" >
+                    <tr><td><a href="{$r.doc_link}">{$r.doc_title}</a></td><td align="center">{$r.addtime|date="Y-m-d H:i:s",###}</td></tr>
+                    </foreach>
+    				<tr><td><a href="">待定</a></td><td align="center">2017-08-11 16:54:00</td></tr>
+                    </tbody>
+                </table>
+
+                </div>
+                <div id="siderbar">
+            
+            <h4 style="font-weight: normal;" class="mirror-help-tips"><i class="icon-bell icon-large" style="margin:0 10px 0 0; color: black;"></i>友情提示</h4>
+
+            <p style="margin:0;">
+                AIB网络工作室云平台技术文档，集结了众多师兄姐多年来累积的精华笔记。</p>
+            <p style="margin:0;">
+                在这里，你能够学习到你想要的知识，获取到你未曾有过的实践经验！</p>
+            <p style="margin:0;">
+                平台的技术文档的是通过“看云”发布、链接而成的，更多精彩内容请多留意服务公告，感谢您的支持！</p>
+
+            <h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+            <ul>
+                <li><a href="http://www.miecu.net" target="_black">觅库</a></li>
+         	    <li><a href="http://www.gdaib.edu.cn" target="_black">GDAIB</a></li>
+            </ul>
+
+
+        <br>
+        <br>
+
+        </div>
+
+        </div>
+            <div class="clear"></div>
+            <div id="footer">
+                <div class="about">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+</body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

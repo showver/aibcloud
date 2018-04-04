@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AIB网络工作室 - 云平台 - OpenStack</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+    <style type="text/css">
+        #siderbar p a{
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            background: #3ac984;
+            padding: 10px 60px;
+            border-radius: 40px;
+            margin-top: 2vw;
+        }
+        #siderbar p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+    <div id="wrapper" style="height: 90vh;">
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">AIB网络工作室 - 云平台 - <b>OpenStack</b></h2>
+            <a href="" title="一个开源的云计算管理平台项目">一个开源的云计算管理平台项目</a>
+        </div>
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>什么是OpenStack？</h2>
+                <table>
+                    <thead align="left">
+						<div>
+							<div>
+								<p><b>OpenStack</b>是什么？为了更好的理解，我们首先来说一下<b>云计算的类型</b>。根据所提供服务的类型，云计算有以下三种落地方式：</p>
+
+<p>1、<b>IaaS(基础架构即服务)</b>，用户能从中申请到硬件或虚拟硬件，包括裸机或虚拟机，然后在上边安装操作系统或其他应用程序。
+如一些大的IaaS公司包括Amazon, Microsoft, VMWare, Rackspace和Red Hat，它们可以在“云端”为你提供虚拟服务器。
+</p>
+
+<p>2、<b>PaaS(平台即服务)</b>，用户能从中申请到一个安装了操作系统以及支撑应用程序运行所需要的运行库等软件的物理机或虚拟机，然后在上边安装其他应用程序，但不能修改已经预装好的操作系统和运行环境。
+如一些大的PaaS提供者有Google App Engine，Microsoft Azure，开发人员可以利用他们提供的环境直接编程，省去自己在服务器上重新部署环境的时间。
+</p>
+
+<p>3、<b>SaaS(软件即服务)</b>，用户可以通过网络以租赁的方式来使用一些软件，而不是购买，比较常见的模式是提供一组账号密码。
+典型的例子，我们在电脑上使用的OFFICE办公软件，这些都是需要在本地安装才能使用的，但有了SaaS，如GoogleDocs、MicrosoftOfficeOnline等应用，我们无需在本机安装，只要打开浏览器，注册帐号，即可以随时随地通过网络来使用这些软件编辑、保存、阅读自己的文档。对于用户只需要自由自在地使用，不需要自己去升级软件、维护软件等操作。
+百度网盘也是一种SaaS应用。
+</p>
+
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenStack</b>就是一套IaaS（基础设施），大家也可以将其简单理解为“云”。它是一套开源云操作系统，由Python语言编写而成且负责通过命令行界面(简称CLI)或者基于Web的仪表板实
+现对计算、存储以及网络资源池的管理工作。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenStack可运行在各类常见Linux平台之上，具体包括RHEL、SUSE以及Ubuntu等等。它能够创建出一套环境，从而提供按需增加或者降低的资源分配机制。大数据、Web服务以及网络功能虚拟化(简称NFV)等面向服务供应商的功能都是OpenStack发挥作用的良好舞台。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenStack的核心组件包括计算、存储与网络三大类。这些组件在OpenStack当中被称为核心服务，每个服务中又由多个组件构成。</p>
+							</div>
+						</div>
+						<p><b>OpenStack架构图</b></p>
+						<tr>
+							<td><img src="{$Think.const.URL}img/openstack-jiagou.jpg" alt="Docker" width="660" height="500"/>
+							<p><font color="red"><b>更多具体介绍可见：<a href="./openstack.docx">OpenStack的架构及组件介绍</a></b></font></p>
+							</td>
+						</tr>
+
+                    </thead>
+                </table>
+				<h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-bell icon-large" style="margin:0 10px; color: black;"></i>OpenStack管理后台操作演示</h2>
+				<table>
+                    <thead align="left">
+						<div>
+							<video width="650" height="400" src="1.mp4" controls="yes"></video>
+						</div>
+                    </thead>
+                </table>
+            </div>
+            <div id="siderbar">
+				<h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>公告</h4>
+				<div>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、目前平台正处于测试阶段，若您想了解OpenStack仪表盘的管理界面，请使用下面的测试账号进行登陆。<br /></span>
+					<p align="center">域：<b><font color="red">default</font></b> 账号：<b><font color="red">test</font></b> 密码：<b><font color="red">test</font></b><br /></p>
+					<span>（建议使用火狐浏览器打开，并安装了最新的Flash插件。）<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、有兴趣的同学可到603交流，如若需要虚拟主机测试，请到<a href="{$Think.const.URL}contact/index.php">服务器申请</a>页面填写表单。<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、下面提供演示视频，供大家对平台内容的了解。<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、温馨提示：请勿对平台进行渗透扫描破坏，如若发现，可通过系统日志查找到攻击源，后果自负！</span>
+				</div>
+				<div align="right">AIB云计算小组<br /> 2017.6.15</div>
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>功能切换</h4>
+				<p><a href="" target="_black">管理后台</a></p>
+				<p><a href="" target="_black">申请服务器</a></p>
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+				<ul>
+					<li><a href="http://www.miecu.net" target="_black">觅库</a></li>
+					<li><a href="http://www.gdaib.edu.cn" target="_black">GDAIB</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

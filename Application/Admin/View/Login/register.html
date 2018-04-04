@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head name="header">
+
+<!-- /.website title -->
+<title>注册</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS Files -->
+<link href="{$Think.const.URL}css/animate.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/login.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/bootstrap.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}public.css" rel="stylesheet" >
+<style type="text/css" media="screen">
+	.btn-default {
+		font-size: 17px;
+		margin: 30px 0 10px;
+		margin-right: 10px;
+		line-height: 20px;
+		padding: 15px 35px;
+		height: 50px;
+		border: 2px solid #3eb0f7;
+		background: transparent;
+		transition: all 0.4s;
+		color: #3eb0f7;
+		border-radius: 100px;
+	}
+	.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+		border: 2px solid #3eb0f7;
+		background: #3eb0f7;
+		color: white;
+	}
+	.btn-primary {
+		font-size: 17px;
+		margin: 30px 0 10px;
+		margin-right: 10px;
+		line-height: 20px;
+		padding: 15px 35px;
+		height: 50px;
+		border: 2px solid #3eb0f7;
+		background: #3eb0f7;
+		transition: all 0.4s;
+		color: white;
+		border-radius: 100px;
+	}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+		border: 2px solid #3eb0f7;
+		background: transparent;
+		color: #3eb0f7;
+	}
+</style>
+<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" /> -->
+</head>
+
+<body data-spy="scroll" style="height:100vh;" data-target="#navbar-scroll">
+
+
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax" style="background-image:url('{$Think.const.URL}img/bg.jpg'); width:100vw; height:90vh;margin:-20px 0;display: flex; align-items: center; transform: translateY(-2%);" data-img-width="2000" data-img-height="1333" data-diff="100">
+	
+	<!-- <div class="overlay"> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 hidden-xs hidden-sm" style="margin-top:20vh;">
+				
+					<!-- /.logo -->
+	
+					<!-- /.main title -->
+						<h2 class="wow fadeInLeft">
+						  网络工作室云平台简介
+						</h2>
+
+					<!-- /.header paragraph -->
+					<div class="landing-text wow fadeInUp">
+						<p>网络工作室云平台，是由罗剑高,李振军老师领导，学生设计完成的一个课题项目。目前平台底层硬件是由20多台高性能PC组成的服务器集群，通过多台Cisco、TP-Link千兆交换机连接，从而实现数据的高速传输，服务器的负载均衡以及应用的高可用。</p>
+					</div>				  
+
+					<!-- /.header button -->
+					<div class="head-btn wow fadeInLeft">
+						<a href="/cloud/index.php/Home/team/teamInfo" class="btn-primary">更多介绍</a>
+						<a href="/cloud/index.php/Home/team/joinus" class="btn-default">加入我们</a>
+					</div>
+	
+		  
+
+				</div> 
+				
+				
+
+				<div class="col-md-offset-1 col-md-3 " style="  margin-top: 40px; border: 1px solid gray; box-shadow: 0 0 40px white;background: rgba(0,0,0,0.5);">
+				
+
+					
+				
+					<!-- Start Sign In Form -->
+					<form id="f1" class="fh5co-form animate-box" id="form-reg" data-animate-effect="fadeIn">
+						<h2 class="text-center" style="margin-top: 15px">注册</h2>
+						<div class="form-group wow fadeInUp" style="display: none;">
+							<div class="alert alert-success" role="alert">注册成功</div>
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="username" class="sr-only">账号名</label>
+							<input type="text" class="form-control" name="username" placeholder="账号名" autocomplete="off">
+						</div>
+				            
+						<div class="form-group wow fadeInUp" style="position: relative;">
+							<label for="email" class="sr-only">邮箱</label>
+							<input type="email" class="form-control" name="email" placeholder="邮箱" autocomplete="off">
+							<div class="btn" id="btn" style="position:absolute;top:0;right:0;cursor: pointer;box-shadow: 0 0 1px gray;" value="发送">发送</div>
+						</div>
+						<div class="form-group wow fadeInUp" style="margin-top:8px;">
+							<label for="code" class="sr-only">验证码</label>
+							<input type="text" class="form-control" name="code" placeholder="验证码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="mm" class="sr-only">密码</label>
+							<input type="password" class="form-control" name="password" placeholder="密码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="rmm" class="sr-only">再次输入密码</label>
+							<input type="password" class="form-control" name="rpwd" placeholder="再次输入密码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="qq" class="sr-only">QQ</label>
+							<input type="text" class="form-control" name="qq" placeholder="QQ" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="phnumber" class="sr-only">手机号码</label>
+							<input type="tel" class="form-control" name="phnumber" placeholder="手机号码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp" align="center" style="padding:2px; font-size: 1em;">
+							<p>已经注册？？ <a href="__CONTROLLER__/login" style="color:yellow !important;">登&nbsp;录</a></p>
+						</div>
+						<div class="form-group text-center wow fadeInUp" style="margin-top: -50px;">
+							<button type="button" class=" btn-default1 wow fadeInUp" style="width:100%; " onclick="check('__CONTROLLER__/register','f1');">注册</button>
+						</div>
+					</form>
+					<!-- END Sign In Form -->
+
+				</div>
+
+			</div>
+		</div> 
+	
+</div>
+ 
+	
+	<!-- /.javascript files -->
+    <script src="{$Think.const.URL}js/jquery-2.1.3.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <!-- <script src="{$Think.const.URL}js/login-js/custom.js"></script> -->
+    <script src="{$Think.const.URL}js/login-js/jquery.sticky.js"></script>
+	<script src="{$Think.const.URL}js/login-js/wow.min.js"></script>
+	<script src="{$Think.const.URL}js/login-js/owl.carousel.min.js"></script>
+	<script src="{$Think.const.URL}js/public.js"></script>
+	<script src="{$Think.const.URL}js/send.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+  </body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+
+    //   验证用户名，4到16位（字母，数字，下划线，减号）
+    zzyz('input[name="username"]', /^[a-zA-Z0-9_-]{4,16}$/, '', '请输入4到16位(字母,数字,下划线,减号)');
+
+    //   验证邮箱
+    zzyz('input[name="email"]', /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, '', '请输入合法的邮箱');
+
+    // 是否填入验证码
+    zzyz('input[name="code"]',/^\w{4}$/,'','请输入接收到的验证码');
+
+    // 验证第二次输入的密码
+    zzyz('input[name="rpwd"]', 'input[name="password"]', '', '与上次密码不一致');
+
+    //验证QQ
+    zzyz('input[name="qq"]', /^[1-9]\d{4,8}$/, '', 'qq不正确');
+
+    //验证手机号码
+    zzyz('input[name="phnumber"]', /^((\(\d{2,3}\))|(\d{3}\-))?13\d{9}$/, '', '手机号码有误');
+
+      
+})
+//判断如果验证全部都不为false通过
+  function check(url,id){ 
+
+		if(reg['username']&&reg['email']&&reg['password']&&reg['qq']&&reg['phnumber']){
+			send(url,id);
+	     }
+ 	}
+</script>

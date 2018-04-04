@@ -1,0 +1,261 @@
+[ 2017-09-12T16:25:49+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: 无法加载控制器:Login
+
+[ 2017-09-12T16:26:21+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 42 "<input type="submit" onclick="{Think.const.URL}js/"  value="登&nbsp;陆" class="btn btn-primary">"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:30:17+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 59 "<script src="{Think.const.URL}js/send.js"></script>"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:30:18+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 59 "<script src="{Think.const.URL}js/send.js"></script>"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:30:22+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 59 "<script src="{Think.const.URL}js/send.js"></script>"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:32:22+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 59 "<script src="{Think.const.URL}js/send.js"></script>"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:32:22+08:00 ] ::1 /cloud/index.php/Admin/login/login
+ERR: Syntax error in template "file:F:\phpStudy\WWW\cloud\Application\Admin\View\Login\login.html"  on line 59 "<script src="{Think.const.URL}js/send.js"></script>"  - Unexpected ".", expected one of: "}"
+
+[ 2017-09-12T16:33:35+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:33:36+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:33:36+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:33:36+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:33:36+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:33:36+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:24+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:25+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:34:25+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:25+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:34:25+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:26+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:28+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:30+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:30+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:34:30+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:30+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:34:30+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:31+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:34+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:34+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:34+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:34+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:34:35+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:34:35+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:34:35+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:22+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:35:22+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:22+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:35:22+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:22+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:46+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:35:46+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:35:46+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:46+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:46+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:35:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:42+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:38:42+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:42+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:38:43+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:44+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:45+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/jquery-3.2.1.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/public.css
+ERR: 非法操作:public.css
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:47+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+
+[ 2017-09-12T16:38:48+08:00 ] ::1 /cloud/index.php/Admin/login/js/send.js
+ERR: 非法操作:js
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh">
+</head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>温馨提示</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="{$Think.const.URL}css/bootstrap.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}public.css" rel="stylesheet" >
+<style type="text/css">
+
+
+    body {
+        background-color: #ECEFF1;
+        color: #37474F;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        overflow-x: hidden;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    .main{
+        width:60vw;
+        height: 70vh;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .panel-body {
+
+    }
+
+</style>
+</head>
+<body>
+
+
+    <!-- <header-item message="我是demo1头部" backUrl="/"></header-item> -->
+    <div class="main" style="font-size:1.6rem;line-height: 2.5rem;letter-spacing: 0.2rem;">
+        <div class="panel panel-success">
+          <div class="panel-heading">服务公告</div>
+          <div class="panel-body">
+            <span>1、关于学生站点，因为站点支持解析php文件，所以请同学们不要上传恶意代码攻击服务器，如想挑战云计算小组的技术，经发现，后果自负。<br></span>
+            <span>2、由于服务器资源有限，每位同学仅能申请一台云服务器且配置统一。若同一用户通过注册多个账号来“刷资源”，一经查到，将冻结相关账号，请理解！<br></span>
+            <span>3、使用过程中若有任何问题请联系管理员：685135<br></span>
+          </div>
+        </div>
+    </div>
+
+
+
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/head-title.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+
+
+
+
+</body>
+</html>

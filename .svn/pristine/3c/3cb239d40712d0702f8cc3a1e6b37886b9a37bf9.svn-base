@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AIB云平台</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <link rel="stylesheet" type="text/css" href="{$Think.const.URL}css/deve-prog.css">
+
+</head>
+
+<body>
+
+
+    <div id="arrow">
+            <ul>
+                <li class="arrowup"></li>
+                <li class="arrowdown"></li>
+            </ul>
+        </div>
+
+        <div id="history" style="height: 90vh;">
+
+            <div class="title">
+                <h2 style="font-weight: bold;">站点成长史</h2>
+                <div id="circle">
+                    <div class="cmsk"></div>
+                    <div class="circlecontent">
+                        <div thisyear="2017" class="timeblock">
+                            <p style="color: rgb(107, 195, 13); font-weight: bold; font-size: 24px;position: absolute;top:-15px;left:8px;">2017</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="timeyear">YEAR</div>
+                    </div>
+                    <a href="#" class="clock"></a>
+                </div>
+            </div>
+
+            <div id="content">
+                <ul class="list">
+                    <li style="margin-top:-110px;">
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">April</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt" ><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">服务器配置升级、交换机连接</a></div>
+                                <div class="hisct">修正了上一版本中的错误，欢迎大家测试，如果发现问题请联系我们,谢谢。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">April</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">OpenStack、vSphere的部署</a></div>
+                                <div class="hisct">随着用户的访问量增大,功能不能满足需求，我们进行了重大更新，对设计和功能都进行大幅度的升级,增加了原创，欣赏版块</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">July 23</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt" style="font-size: 10px; "><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点底层数据的处理——Shell脚本的编写</a></div>
+                                <div class="hisct">推出了HTML5 CSS3 官方微博</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">July 25</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台架构设计——分布式、高可用、负载均衡</a></div>
+                                <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 11</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台网站设计——初步框架排版、素材收集、logo制作</a></div>
+                                <div class="hisct">在集体探讨下，发现目前的HTML5 CSS3 发展历程已经不能满足需求，集体讨论=，这时候，韩老师之前的设计稿被端上了会议桌。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 19</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">OpenStack、vSphere、SVN、Docker、CentOS软件源、邮件系统的基本页面排版设计</a></div>
+                                <div class="hisct">某天晚上的凌晨三点一刻，预想建立这样一个功能的网站，专为网页设计师。</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 21</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点页面框架设计——个人中心、对外展示页面、教师管理中心</a></div>
+                                <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 25</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点——管理后台应用的修改</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">August 27</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">学生站点后端结构设计——评分、评优、留言、学生用户数据的导入</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 04</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台网站设计——优化代码、页面</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 10</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">登陆、注册、个人中心的页面设计、导航优化设计</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">September 12</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt"><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">平台外网IP的申请、网速升级</a></div>
+                                <div class="hisct">代码笔记第一版上线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+
+    <script src="{$Think.const.URL}js/jquery.mousewheel.js"></script>
+    <script src="{$Think.const.URL}js/jquery.easing.js"></script>
+    <script src="{$Think.const.URL}js/deveProg.js"></script>
+</body>
+
+</html>

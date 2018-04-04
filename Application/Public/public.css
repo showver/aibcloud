@@ -1,0 +1,175 @@
+body {
+    overflow-x: hidden;
+
+    width: 100vw;
+}
+
+
+.my-nav{
+    border: none;
+    background: rgba(33, 56, 80, 1) !important;
+}
+
+.nav-header img {
+    width: 170px;
+    min-width: 170px;
+    height: 40px;
+    min-height: 40px;
+    margin: 5px 1vw; 
+}
+
+.nav-content img {
+    width: 40px; 
+    height: 40px;  
+    margin: 5px 10px; 
+    cursor: pointer;
+}
+
+.nav-content>ul>li {
+    
+}
+
+.nav-content>ul>li>a {
+    color: gray !important;
+    background: rgba(33, 56, 80, 1) !important;
+}
+
+.nav-content>ul>li>a:hover {
+    color: white !important;
+}
+
+.nav-content .back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 120px;
+    height: 3px;
+
+    background-color: #0cf;
+}
+
+
+
+
+.dropdown a:focus {
+    background: rgba(33, 56, 120, 1) !important;
+    color: white !important;
+}
+
+.dropdown-menu {
+    background: rgba(0, 0, 0, .8) !important;
+}
+
+.dropdown-menu a {
+    color: white !important;
+}
+
+.dropdown-menu a:hover {
+    color: red !important;
+    background: rgba(0, 0, 0, 0) !important;
+} 
+
+
+
+
+footer {
+    font-size: 1rem;
+
+    position: relative;
+    bottom: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 40px;
+
+    background: rgba(33, 56, 80, 1);
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+footer span {
+    color: white;
+}
+
+footer span a {
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: red;
+}
+
+
+@media only screen and (max-width:768px){
+    .dropdown-menu {
+        background: rgba(33, 56, 0, .2) !important;
+    }
+
+    .dropdown-menu li {
+        padding-left: 20px;
+        color: white;
+        font-weight: bold !important;
+    }
+
+    .dropdown-menu li:hover {
+        color: red !important;
+    }
+
+    .dropdown-menu li span {
+        padding-left: 25px !important;
+        color: gray !important;
+    }
+
+    .dropdown-menu li span:hover { 
+        color: red !important;
+        font-weight: bold !important;
+    }
+
+    .dropdown-menu a {
+        color: gray !important;
+    }
+
+    .dropdown-menu a:hover{
+        font-weight: bold !important;
+        text-decoration: none;
+    }
+}
+/* @media only screen and (min-width:1440px){
+    nav{
+        font-size: 2.2rem;
+    }
+    nav a img{
+        width: 200px;
+        min-width: 200px;
+    }
+    .nav{
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (min-width:1800px){
+    nav{
+        font-size: 2.4rem;
+    }
+    nav a img{
+        width: 250px;
+        min-width: 250px;
+    }
+    .nav{
+        margin-top: 20px;
+    }
+
+} */

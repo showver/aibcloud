@@ -1,0 +1,58 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+require("/public/function/image.func.php");
+class StuController extends Controller {
+	public function index(){
+		$this->display();
+	}
+
+	public function stuCenter($act=''){
+
+		if(!empty($act) && $act==1){
+
+			if($_FILES!=null){
+		 		if(!@getimagesize($_FILES['png']['tmp_name'])){
+		  		echo '不是真实的图片';return;
+	  			}
+	
+				image_thumb($_FILES['png']['tmp_name'],40,40);
+				echo "修改成功";return;
+			}else{
+				echo '请选择要修改的图片';return;
+			}
+		}else if(!empty($act) && $act==2){
+				$post = I('post.');
+				$User = M('User');
+				$r = $User->where("username='{$_SESSION['username']}'")->save($post);
+				if($r){
+					if($_FILES!=null){
+						if(!@getimagesize($_FILES['wpng']['tmp_name'])){
+							echo '不是真实的图片';return;
+						}
+
+						image_thumb($_FILES[wpng]['tmp_name'],200,250,1);
+						echo '修改成功';return;
+					}else{
+						echo '请选择要修改的图片';return;
+					}
+				}else{
+					echo "更改失败";return;
+				}
+
+		}else{
+		
+		$User = M('User');
+		$r = $User->where("username='{$_SESSION['username']}'")->field('netname,netdescribt')->find();
+		$this->assign('r',$r);
+		$this->display();
+		}
+	}
+
+	public function stuMessage(){
+		$User = M('User');
+		$r = $User->where("username='{$_SESSION['username']}'")->field('netname,netdescribt')->find();
+		$this->assign('r',$r);
+		$this->display();
+	}
+}

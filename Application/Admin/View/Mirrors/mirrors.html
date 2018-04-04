@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>网络教学云平台 - 镜像站</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+
+    <div id="wrapper" style="height: 90vh;">
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">网络教学云平台 - 镜像站</h2>
+            <a href="http://aibcloud.org/" title="一个开源的镜像站点">An Open Source Mirror Site</a>
+        </div>
+
+<!-- <div id="navbar" style=" margin:5px auto;margin-bottom:10px;background: #CCFFFF;height:50px;">
+    <ul>
+        <li><a href="http://aibcloud.org/">主页</a></li>
+        <li><a href="">关于</a>http://</li>
+    </ul>
+</div> -->
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>镜像文件列表</h2>
+
+                <table class="file-table">
+                    <thead  align="center">
+                    <tr>
+                        <th>镜像</th>
+                        <th class="text-center">最后更新时间</th>
+                        <th class="text-center">repo文件下载</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=Centos-6.repo">CentOS-6</a></td>
+                        <td align="center">2017-08-11 15:40:15</td><td align="center"><a href="{$Think.const.URL}download/download.php?filename=Centos-6.repo">repo</a></td>
+                    </tr>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=Centos-6-epel.repo">CentOS-6-epel</a></td>
+                        <td align="center">2017-08-11 05:05:58</td>
+                        <td align="center"><a href="{$Think.const.URL}download/download.php?filename=Centos-6-epel.repo">repo</a></td>
+                    </tr>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=Centos-7.repo">CentOS-7</a></td>
+                        <td align="center">2017-08-11 03:17:41</td><td align="center"><a href="{$Think.const.URL}download/download.php?filename=Centos-7.repo">repo</a></td>
+                    </tr>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=Centos-7-epel.repo">CentOS-7-epel</a></td>
+                        <td align="center">2017-08-11 02:26:14</td><td align="center"><a href="{$Think.const.URL}download/download.php?filename=Centos-7-epel.repo">repo</a></td>
+                    </tr>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=Ceph.repo">Ceph</a></td><td align="center">2017-08-11 01:50:00</td><td align="center"><a href="{$Think.const.URL}download/download.php?filename=Ceph.repo">repo</a></td>
+                    </tr>
+    				<tr>
+                        <td><a href="{$Think.const.URL}download/download.php?filename=OpenStack-N.repo">OpenStack-N</a></td><td align="center">2017-08-11 16:54:00</td><td align="center"><a href="{$Think.const.URL}download/download.php?filename=OpenStack-N.repo">repo</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                </div>
+                <div id="siderbar">
+            <h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>镜像配置教程</h4>
+        	<p>
+        	在左边的“repo文件下载”栏目上，根据需要下载相应的repo文件，然后使用xshell，配合xftp，
+        	将对应的repo文件上传到Linux的/etc/yum.repos.d/目录下，最后使用命令：<br />
+        	yum clean all<br />
+        	yum makecache<br />
+        	更新yum源缓存，没报错则证明yum源配置成功。<br />
+        	提示：将repo文件上传到Linux目录时请先清空原有的repo（慎删！），命令：<br />
+        	rm -rf * /etc/yum.repos.d/
+        	</p>
+        	<p></p>
+            <h4 style="font-weight: normal;" class="mirror-help-tips"><i class="icon-bell icon-large" style="margin:0 10px 0 0; color: black;"></i>友情提示</h4>
+
+            <p>
+                使用AIB - 镜像站，可以节省大量外网带宽，提高软件安装效率。
+        		如果您需要下载Linux发行版的ISO镜像，请到内网云盘下载。
+           </p>
+            <h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+            <ul>
+                <li><a href="http://www.miecu.net" target="_black">觅库</a></li>
+         	    <li><a href="http://www.gdaib.edu.cn" target="_black">GDAIB</a></li>
+            </ul>
+
+
+        <br>
+        <br>
+
+        </div>
+
+        </div>
+            <div class="clear"></div>
+            <div id="footer">
+                <div class="about">
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+</body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

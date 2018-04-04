@@ -1,0 +1,111 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+require("/public/function/image.func.php");
+class StuController extends Controller {
+	public function stuIndex(){
+		$User = M('User');
+		if($_GET['flag']==NULL||$_GET['flag']==1){
+			$list = $User->where("class='1'")->field('id,username,netname')->limit(8)->select();
+			$this->assign('list',$list);
+
+		}else if($_GET['flag']==2){
+			$list = $User->where("class='2'")->field('id,username,netname')->limit(8)->select();
+			$this->assign('list',$list);
+
+		}
+		
+		$this->display();
+
+	}
+
+	public function persInfo(){
+		$User = M('User');
+		$r = $User->where("username='{$_SESSION['username']}'")->field('netname,netdescribt,phnumber,qq,perdescribt')->find();
+		$this->assign('r',$r);
+		$this->display();
+	}
+
+	public function stuMessage(){
+		$User = M('User');
+		$Comment = M('Comment');
+		$id = I('get.id');
+		if($id!=null){
+			if(!empty($_POST)){
+				$post = I('post.');
+				$post['comment_btime'] = time();
+				$result = $Comment->data($post)->add();
+		
+				return;
+			}
+			$r = $User->where("id=$id")->field('id,username,netname,netdescribt')->find();
+			$list = $Comment->where("comment_to=$id")->select();
+			$this->assign('list',$list);
+			$this->assign('r',$r);
+		}else{
+			$r = $User->where("username='{$_SESSION['username']}'")->field('id,username,netname,netdescribt')->find();
+			$list = $Comment->where("comment_to={$r['id']}")->select();
+			$this->assign('list',$list);
+			$this->assign('r',$r);
+		}
+		
+		$this->display();
+	}
+
+	public function uploadImg(){
+
+			if($_FILES!=null){
+		 		if(!@getimagesize($_FILES['tx']['tmp_name'])){
+		  		echo '不是真实的图片';return;
+	  			}
+	
+				image_thumb($_FILES['tx']['tmp_name'],150,150);
+				echo "修改成功";return;
+			}else{
+				echo '请选择要修改的图片';return;
+			}
+	}
+
+	public function upPwd(){
+
+	}
+
+	public function upInfo(){
+		$post = I('post.');
+		$User = M('User');
+		$r = $User->where("username='{$_SESSION['username']}'")->save($post);
+		if($r){
+			echo '修改成功';
+		}
+
+	}
+
+	public function upNet(){
+
+			$post = I('post.');
+			$User = M('User');
+			$r = $User->where("username='{$_SESSION['username']}'")->save($post);
+			if($r){
+				if($_FILES!=null){
+					if(!@getimagesize($_FILES['slt']['tmp_name'])){
+						echo '不是真实的图片';return;
+					}
+
+					image_thumb($_FILES['slt']['tmp_name'],200,250,1);
+					echo '修改成功';return;
+				}else{
+					echo '请选择要修改的图片';return;
+				}
+			}else{
+				echo "更改失败";return;
+			}
+
+		
+	}
+
+
+
+
+
+
+}

@@ -1,0 +1,2151 @@
+[ 2017-11-08T09:54:29+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-11-08T09:54:34+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0327s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='root' and password='123456' ) LIMIT 1   [ RunTime:0.0367s ]
+
+[ 2017-11-08T09:54:35+08:00 ] ::1 /cloud/index.php/Admin/Tea/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000439s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined variable: r F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9b07b3247e55355386f1844155c3e1c3.php 第 374 行.
+NOTIC: [8] Undefined variable: r F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9b07b3247e55355386f1844155c3e1c3.php 第 375 行.
+NOTIC: [8] Undefined variable: r F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9b07b3247e55355386f1844155c3e1c3.php 第 379 行.
+NOTIC: [8] Undefined variable: r F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9b07b3247e55355386f1844155c3e1c3.php 第 380 行.
+NOTIC: [8] Undefined variable: r F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9b07b3247e55355386f1844155c3e1c3.php 第 530 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-11-08T09:54:41+08:00 ] ::1 /cloud/index.php/admin/tea/teaCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0362s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\TeaController.class.php 第 10 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=2 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=15 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=16 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=19 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=20 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=21 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=22 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=23 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=24 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=25 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=26 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=27 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=28 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_score` WHERE ( to_id=29 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\TeaController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 438 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 441 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 446 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 451 行.
+NOTIC: [8] Undefined index: score F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\b870beec85d77e20be94d516286b456e.php 第 456 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001534s ]
+
+[ 2017-11-08T10:04:27+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-11-08T10:04:27+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-11-08T10:04:30+08:00 ] ::1 /cloud/index.php/admin/tea/teaCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-11-08T10:04:36+08:00 ] ::1 /cloud/index.php/admin/tea/teaCenter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+
+[ 2017-11-08T11:10:03+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-11-08T11:10:20+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-11-08T11:10:32+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0105s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='admin' and password='123456' ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-11-08T11:10:33+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0966s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0369s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0226s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-11-08T12:26:19+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-11-08T12:26:24+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0167s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='aaa' and password='123456' ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-11-08T12:26:26+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0719s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,8   [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,8   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-11-08T13:07:49+08:00 ] ::1 /cloud/index.php/Admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-11-08T13:07:49+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-11-08T13:16:29+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-11-08T13:16:33+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0127s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='admin' and password='123456' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-11-08T13:16:34+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000380s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2017-11-08T13:16:40+08:00 ] ::1 /cloud/index.php/admin/stu/stuMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `cl_reply` [ RunTime:0.0284s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 75 行.
+SQL: SELECT `id`,`username`,`netname`,`netdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_comment` WHERE ( comment_to=1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=4 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=10 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=11 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 1 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2017-11-08T13:16:44+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0093s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-11-08T14:30:07+08:00 ] ::1 /cloud/index.php/admin/stu/persInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0150s ]
+SQL: SELECT `netname`,`netdescribt`,`phnumber`,`qq`,`perdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-11-08T14:30:09+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-11-08T14:30:09+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-11-08T14:30:12+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-11-08T14:31:51+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-11-08T14:31:51+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-11-08T14:32:03+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0097s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='20165528201' and password='043834' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-08T14:32:04+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='20165528201' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=31 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-11-08T14:33:54+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0105s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001660s ]
+
+[ 2017-11-08T14:34:03+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2017-11-08T14:34:30+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2017-11-08T14:34:33+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2017-11-08T14:36:03+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-11-08T14:36:03+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-11-08T14:38:06+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-11-08T14:38:58+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-11-08T14:40:16+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2017-11-08T14:41:10+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-11-08T14:48:55+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2017-11-08T14:49:06+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0123s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='20165528201' and password='043834' ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-11-08T14:49:07+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='20165528201' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='20165528201' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-11-08T14:50:55+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-11-08T14:50:55+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2017-11-08T14:50:59+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0100s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='admin' and password='123456' ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-11-08T14:51:00+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-11-08T14:51:06+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2017-11-08T14:51:54+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-11-08T14:54:23+08:00 ] ::1 /cloud/index.php/admin/stu/servAppl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-11-08T14:54:27+08:00 ] ::1 /cloud/index.php/admin/stu/stuMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cl_reply` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 75 行.
+SQL: SELECT `id`,`username`,`netname`,`netdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_comment` WHERE ( comment_to=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=10 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=11 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 1 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-11-08T14:55:37+08:00 ] ::1 /cloud/index.php/admin/stu/persInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0117s ]
+SQL: SELECT `netname`,`netdescribt`,`phnumber`,`qq`,`perdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2017-11-08T14:59:45+08:00 ] ::1 /cloud/index.php/admin/stu/servAppl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-11-08T15:25:34+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-11-08T15:25:34+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-11-08T15:25:38+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0131s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='aaa' and password='123456' ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-11-08T15:25:39+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2017-11-08T15:49:29+08:00 ] ::1 /cloud/index.php/Admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-11-08T15:49:29+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-11-08T15:49:36+08:00 ] ::1 /cloud/index.php/admin/develop/deveProg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY addtime  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2017-11-08T15:49:50+08:00 ] ::1 /cloud/index.php/admin/develop/deveProg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY addtime  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-11-08T15:49:55+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-11-08T15:49:57+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-11-08T15:50:04+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2017-11-08T15:50:07+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0056s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='admin' and password='123456' ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-11-08T15:50:09+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0108s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-11-08T15:53:52+08:00 ] ::1 /cloud/index.php/Admin/Stu/persInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0107s ]
+SQL: SELECT `netname`,`netdescribt`,`phnumber`,`qq`,`perdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
+
+[ 2017-11-08T16:54:49+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-11-08T16:54:49+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-11-08T16:58:32+08:00 ] ::1 /cloud/index.php/admin/develop/deveProg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY addtime  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2017-11-08T16:58:33+08:00 ] ::1 /cloud/index.php/admin/TouchUs/touchUs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2017-11-08T17:01:30+08:00 ] ::1 /cloud/index.php/Admin/ServerHelp/document
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,12   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001902s ]
+
+[ 2017-11-08T17:02:22+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-11-08T17:02:59+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-11-08T17:03:04+08:00 ] ::1 /cloud/index.php/Admin/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-11-08T17:03:14+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-11-08T17:03:41+08:00 ] ::1 /cloud/index.php/admin/develop/deveProg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY addtime  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-11-08T17:03:45+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-11-08T17:03:48+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0042s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='admin' and password='123456' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-08T17:03:50+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-11-08T17:03:57+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=16 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=19 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=20 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=23 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=24 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=25 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=26 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-11-08T17:04:02+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-11-08T17:04:15+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `cl_reply` [ RunTime:0.0121s ]
+NOTIC: [8] Undefined index: flag F:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 75 行.
+SQL: SELECT `id`,`username`,`netname`,`netdescribt` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cl_comment` WHERE ( comment_to=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=10 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_reply` WHERE ( reply_to=11 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 1 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+NOTIC: [8] Undefined offset: 3 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 387 行.
+NOTIC: [8] Undefined offset: 2 F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\9c06377b7c21deb1a2a0b9212d50f325.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-11-08T17:04:18+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-11-08T17:04:26+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-11-08T17:04:41+08:00 ] ::1 /cloud/index.php/admin/stu/servAppl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`level`,`cre_time` FROM `cl_user` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score` FROM `cl_score` WHERE ( to_id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='admin' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: cre_btime F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\6034e3292deac55385e114c3e1cbb5af.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2017-11-08T17:05:08+08:00 ] ::1 /cloud/index.php/admin/login/end
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+
+[ 2017-11-08T17:05:08+08:00 ] ::1 /cloud/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-11-08T17:05:14+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0114s ]
+SQL: SELECT `username`,`level`,`password` FROM `cl_user` WHERE ( username='aaa' and password='123456' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-11-08T17:05:15+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,2   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,8   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,8   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,8   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-11-08T17:08:43+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,8   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,8   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,8   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000411s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+

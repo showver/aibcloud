@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>学生个人中心</title>
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+<link rel="stylesheet" href="{$Think.const.URL}css/popModal.min.css">
+<style>
+
+	body{
+		background: none;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	ul,h1,h2,p{
+		margin: 0;
+		padding: 0;
+	}
+	ul li{
+		list-style: none;
+	}
+	.container{
+		width: 80vw;
+		margin: 0 auto;
+	}
+
+	h3{
+		display: inline-block;
+		font-size: 25px;
+		width: 25vw;
+		border-bottom: 2px solid green;
+	}
+	.web_info{
+		text-align: center;
+		position: relative;
+	}
+	.web_info_l img{
+		display: inline-block;
+		text-align: left;
+		width: 20vw;
+		height: 20vw;
+		margin: 1vw 4vw;
+	}
+	.web_info_r{
+		font-size: 20px;
+	}
+	.web_info_r img{
+		margin-left: 1vw;
+		width: 5vw;
+		height: 5vw;
+	}
+	.web_info_r span{
+		margin: 1vh 2vw;
+	}
+	.web_info_r p{
+		word-break: break-all;
+		margin:0 1vw;
+		min-height: 25vh;
+	}
+
+	.web_info_r button{
+		margin: 0 30px;
+		background-color: #4CAF50; /* Green */
+	    border: 1px solid black;
+	    border-radius: 10px;
+	    color: white;
+	    padding: 10px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 18px;
+		transition: all .7s ease-in;
+	}
+	.web_info_r button:hover{
+		background-color:#2165F2;
+	}
+	.web_info_r a{
+		text-decoration: none;
+		color: white;
+	}
+	.web_info_r a:hover{
+		text-decoration: underline;
+	}
+
+
+
+	.mess_sub {
+		width: 78vw;
+		margin: 0 auto;
+		position: relative;
+	}
+	.mess_sub textarea{
+		width: 97%;
+		height: 200px;
+		margin: 10px 1%;
+		resize: none;
+	}
+	.mess_sub button{
+		position: absolute;
+		bottom: 5.5%;
+		right: 1.5%;
+		background-color: #4CAF50; /* Green */
+	    border: 1px solid black;
+	    border-radius: 10px;
+	    color: white;
+	    padding: 10px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 15px;
+	    transition: all 0.7s ease-in;
+	}
+	.mess_sub button:hover{
+		background-color:#2165F2;
+	}
+
+	.mess_show{
+		width: 70vw;
+		margin: 0 auto;
+	}
+	.mess_show a,button{
+		margin-left: 1vw;
+		padding: 0;
+	}
+	.mess_show p{
+		width: 60vw;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	#user_name{
+		font-weight: bold;
+	}
+	.mess_show>ul{
+		width: 70vw;
+		margin-top: 4vh;
+	}
+	.mess_show>ul>li{
+		padding-top: 2vh;
+		clear: both;
+	}
+	.mess_show>ul>li>img{
+		width: 5vw;
+		max-width: 80px;
+		height: 5vw;
+		max-height: 80px;
+		border:1px solid;
+		float:left;
+	}
+	.mess_show>ul>li>div{
+
+		height: 80px;
+		max-height: 80px;
+		padding: 15px 0;
+		/*padding-top: -100px;*/
+		/*clear:both;*/
+		/*margin-top: 0px;*/
+		margin-left: 6vw;
+		/*border:1px solid;*/
+	}
+	.mess_show .m_s_d{
+		width: 70vw;
+		margin-top: 10px;
+		margin-left: 6vw;
+	}
+	.mess_show .m_s_d li{
+		margin-top: 1vh;
+	}
+	.mess_show .m_s_d img{
+		width: 4vw;
+		max-width: 60px;
+		height: 4vw;
+		max-height: 60px;
+		float: left;
+	}
+	.mess_show .m_s_d div{
+		height: 60px;
+		max-height: 80px;
+		padding-top: 8px;
+		margin-left: 5vw;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+   
+	<div class="container" style="clear: both;">
+			<h3>{$r['username']}的网站</h3>
+			<section class="row web_info">
+				<div class="col-md-4 web_info_l">
+					<img src="/cloud/application/admin/public/uploadImg/{$r['username']}w.png">
+				</div>
+				<div class="col-md-8 web_info_r">
+					<div class="form-group">
+						<img src="/cloud/application/admin/public/uploadImg/{$r['username']}.png"" class="img-circle">
+						<span>姓名：{$r['username']}</span>
+						<span>网站名称：{$r['netname']}</span>
+					</div>
+		            <p>描述：{$r['netdescribt']}</p>
+		            <div class="form-group">
+		            	<a href="__CONTROLLER__/stuIndex"><button>学生站点列表</button></a>
+		            	<a href=""><button>进入网站</button></a>
+		            </div>
+				</div>
+			</section>
+			<section class="row" style="margin-bottom: 4vh;">
+				<article class="mess_sub">
+					<form id="fm1" >
+					<input type="hidden" name="comment_bauthor" value="{$Think.session.username}" />
+					<input type="hidden" name="comment_to" value="{$r.id}" />
+					<textarea name="comment_content"></textarea>
+					<button type="button" onclick="send('./{$r.id}','fm1');">给他留言</button>
+					</form>
+				</article>
+				<div class="row mess_show">
+					<ul class="m_s_c">
+						<li class="repeat-con">
+					<foreach name="list" item="res" >
+							<img src="/cloud/application/admin/public/uploadImg/{$r['username']}.png" alt="" class="img-circle">
+							<div>
+							    <p>
+							    	<span id="user_name">{$res.comment_bauthor}：</span>{$res.comment_content}
+							    </p>
+								<p>
+									{$res.comment_btime|date='Y-m-d H:i:s',###} <a href="">查看</a><button class="repeat">回复</button>
+								</p>
+							</div>
+					</foreach>
+							<ul class="m_s_d">
+								<li>
+									<img src="{$Think.const.URL}img/stab1.png" alt="" class="img-circle">
+									<div>
+								    	<p>
+									    <span id="user_name"> yyy </span>回复<span id="user_name"> xxx ：</span>那你很胖胖啊~~
+									    </p>
+									    <!-- <p>2017-08-27<button  class="repeat-sec">回复</button></p> -->
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			<!-- 点击回复弹出框 -->
+				<div class="modal fade" id="mdreply" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<textarea style="resize: none;" cols="78" rows="10"></textarea>
+							</div>
+							<div class="modal-footer">
+				                <button type="button" class="btn btn-default modal-close" data-dismiss="modal">关闭</button>
+				                <button type="button" class="btn btn-primary mdreply_sub" data-dismiss="modal">提交</button>
+				            </div>
+						</div>
+					</div>
+				</div>
+
+				<div id="page">
+				    <div id="dialog_content" class="dialog_content" style="display:none">
+				        <div class="dialogModal_header">请输入留言信息</div>
+				        <div class="dialogModal_content">
+				            <textarea style="resize: none;" id="modal-text" cols="84" rows="10"></textarea>
+				        </div>
+				        <div class="dialogModal_footer">
+				            <button type="button" data-dialogModalBut="cancel">关闭</button>
+				            <button type="button" data-dialogModalBut="ok">留言</button>
+				        </div>
+				    </div>
+				</div>
+			</section>
+	</div>
+
+
+
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script src="{$Think.const.URL}js/popModal.min.js"></script>
+<script src="{$Think.const.URL}js/public.js"></script>
+<script src="{$Think.const.URL}js/send.js"></script>
+<script type="text/javascript">
+/*----- 开始js操作  -----*/
+	$(document).ready(function() {
+		$('body').on('click','.repeat',function () {
+			openModal($(this),'fir');
+		});
+
+		$('body').on('click','.repeat-sec',function () {
+			openModal($(this),'sec');
+		});
+
+		function openModal ($this,type) {
+			$('.dialog_content').dialogModal({
+
+			    onOkBut: function() {
+			        closeModalFn($this,type);
+			    },
+
+			    onCancelBut: function() {
+
+			    },
+
+			    onLoad: function() {
+
+			    },
+
+			    onClose: function() {
+
+			    },
+			});
+
+		}
+		function closeModalFn($this,type) {
+			var $el = $('.dialogModal #modal-text');
+			console.log($el);
+			console.log($el.val());
+			var val2 = $el.val();
+			if(val2.trim() === ''){
+				alert('请填写留言内容');
+				return false;
+			}
+			var temp2 = '<li>'+
+					'<img src="{$Think.const.URL}img/stab1.png" alt="" class="img-circle">'+
+					'<div>'+
+					'<p><span id="user_name"> yyy </span>'+
+					'回复<span id="user_name"> xxx ：</span>'+
+					val2+
+					'</p>'+
+					'<p>2017-08-27<button class="repeat-sec">回复</button>'+
+					'</p>'+
+					'</div>'+
+					'</li>';
+			var $msd = $this.closest('.repeat-con').find('.m_s_d');
+			var $firstEl = $msd.find('li').eq(0);
+
+			if(type === 'fir'){
+				if(!$firstEl.length){
+					$(temp2).appendTo($msd);
+				}else{
+					$(temp2).insertAfter($firstEl)
+				}
+			}else if(type === 'sec'){
+				$this.closest('li').after(temp2);
+			}
+
+			$el.val('');
+		}
+
+
+
+
+	/*-----  点击提交  ------*/
+		$('.mess_sub button').click(function() {
+			var val = $('.mess_sub textarea').val();
+			if(val.trim() === ''){
+				alert('请填写留言内容');
+				return ;
+			}
+
+			var temp = '<li class="repeat-con">'+
+					'<img src="/cloud/application/admin/public/uploadImg/{$r.username}.png" alt="" class="img-circle">'+
+					'<div>'+
+					'<p><span id="user_name">{$Think.session.username}： </span>'+
+					val+
+					'</p>'+
+					'<p>2017-08-27 <a href="">查看</a><button class="repeat">回复</button>'+
+					'</p>'+
+					'</div>'+
+					'<ul class="m_s_d"></ul>'+
+					'</li>';
+			$('.m_s_c').append(temp);
+			$('.mess_sub textarea').val('');
+		});
+	});
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+

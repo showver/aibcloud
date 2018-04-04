@@ -1,0 +1,12 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class CloudController extends Controller {
+   public function platform(){
+		$this->display();
+   }
+   
+   public function cloudRequire(){
+		$this->display();
+   }
+}

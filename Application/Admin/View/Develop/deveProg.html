@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AIB云平台</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <link rel="stylesheet" type="text/css" href="{$Think.const.URL}css/deve-prog.css">
+
+</head>
+<body>
+    <div id="arrow">
+            <ul>
+                <li class="arrowup"></li>
+                <li class="arrowdown"></li>
+            </ul>
+    </div>
+
+        <div id="history" style="height: 90vh;">
+
+            <div class="title">
+                <h2 style="font-weight: bold;">站点成长史</h2>
+                <div id="circle">
+                    <div class="cmsk"></div>
+                    <div class="circlecontent">
+                        <div thisyear="2017" class="timeblock">
+                            <p style="color: rgb(107, 195, 13); font-weight: bold; font-size: 24px;position: absolute;top:-15px;left:8px;">2017</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="timeyear">YEAR</div>
+                    </div>
+                    <a href="#" class="clock" style="position:absolute;top:-5px;left:-5px;"></a>
+                </div>
+            </div>
+
+            <div id="content">
+                <ul class="list">
+                    <foreach name="list" item="r">
+                    <li style="margin-top:0px;">
+                        <div class="liwrap">
+                            <div class="lileft">
+                                <div class="date">
+                                    
+                                    <span class="md">{$r.addtime|date="F d",###}</span>
+                                </div>
+                            </div>
+
+                            <div class="point"><b></b></div>
+
+                            <div class="liright">
+                                <div class="histt" ><a href="#" style="font-size: 1.6rem; color:rgb(107, 195, 13);">{$r.title}</a></div>
+                                <div class="hisct">{$r.content}</div>
+                            </div>
+                        </div>
+                    </li>
+                    </foreach>
+                </ul>
+            </div>
+        </div>
+
+
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+
+    <script src="{$Think.const.URL}js/jquery.mousewheel.js"></script>
+    <script src="{$Think.const.URL}js/jquery.easing.js"></script>
+    <script src="{$Think.const.URL}js/deveProg.js"></script>
+</body>
+
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

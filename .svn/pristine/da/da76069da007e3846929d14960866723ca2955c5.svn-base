@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AIB网络工作室 - 云平台 - vSphere</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+    <style type="text/css">
+    	#siderbar p a{
+    		color: white;
+    		font-size: 1.5rem;
+    		text-decoration: none;
+    		font-weight: bold;
+    		background: #3ac984;
+    		padding: 10px 60px;
+    		border-radius: 40px;
+    		margin-top: 2vw;
+    	}
+    	#siderbar p a:hover{
+    		text-decoration: underline;
+    	}
+    </style>
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+    <div id="wrapper" >
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">AIB网络工作室 - 云平台 - <b>vSphere</b></h2>
+            <a href="" title="一个业界领先且最可靠的虚拟化平台">一个业界领先且最可靠的虚拟化平台</a>
+        </div>
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>什么是vSphere？</h2>
+                <table>
+                    <thead align="left">
+						<div>
+							<div>
+								<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vSphere</b>是什么？百度上说：vSphere是VMware公司推出的一套服务器虚拟化解决方案。官方授课的解释：VMware vSphere是实施以下任务的基础架构虚拟化套件：</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、提供虚拟化、管理、资源优化、应用程序可用性和操作自动化等功能。</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、汇聚物理硬件资源，并为数据中心提供虚拟资源。</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总结一下：vSphere是一种实现虚拟化的一种方法，而这个方法涉及了两个服务六个方面。</p>
+								<p><b>两个服务：</b>应用程序服务，基础架构服务。</p>
+								<p><b>六个方面：</b>可用性，安全性，可扩展性，计算，存储，网络。其中前三个属于应用程序服务，后三个属于基础架构服务。</p>
+							</div>
+						</div>
+						<div>
+							<p><b>vSphere名字的由来</b></p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最初它的命名是IV(基础虚拟化)，但随后创始人觉得这个名字不够cool，就又开始讨论起个什么样的名字合适。大家第一次使用VMware Workstation时，是不是觉得很神奇，一个操作系统任由自己操控，玩坏了还能利用快照还原。是不是有种我是主宰的感觉。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于这种感觉，他们联想到水晶球，这个神奇而又神秘的东西。它能预测未来，回顾过去，看透人心...种种功能突出了它的魅力。之后经过讨论，Sphere这个名字被确定下来。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但是只是这个水晶球Sphere明显不符合他们虚拟化的实际特点，于是就在Sphere前面加个v表示虚拟化的水晶球，至此vSphere名字正式被使用。
+							</p>
+						</div>
+						<p><b>vSphere架构图</b></p>
+						<tr>
+							<td><img src="{$Think.const.URL}img/vsphere-jiagou.jpg" alt="Docker" width="600" height="600"/>
+							<p><font color="red"><b>更多具体介绍可见：<a href="./vsphere.docx">什么是vSphere</a></b></font></p>
+							</td>
+						</tr>
+
+                    </thead>
+                </table>
+				<h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-bell icon-large" style="margin:0 10px; color: black;"></i>vSphere管理后台操作演示</h2>
+				<table>
+                    <thead align="left">
+						<div>
+							<video width="650" height="400" src="1.mp4" controls="yes"></video>
+						</div>
+                    </thead>
+                </table>
+            </div>
+            <div id="siderbar">
+				<h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>公告</h4>
+				<div>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、目前平台正处于测试阶段，若您想了解OpenStack仪表盘的管理界面，请使用下面的测试账号进行登陆。<br /></span>
+					<p align="center">账号：<b><font color="red">test@vsphere.local</font></b><br />密码：<b><font color="red">Test@123</font></b></p>
+					<span>（建议使用火狐浏览器打开，并安装了最新的Flash插件。）<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、有兴趣的同学可到603交流，如若需要虚拟主机测试，请到<a href="{$Think.const.URL}contact/index.php">服务器申请</a>页面填写表单。<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、下面提供演示视频，供大家对平台内容的了解。<br /></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、温馨提示：请勿对平台进行渗透扫描破坏，如若发现，可通过系统日志查找到攻击源，后果自负！</span>
+				</div>
+				<div align="right">AIB云计算小组<br /> 2017.6.15</div>
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>功能切换</h4>
+				<p><a href="">管理后台</a></p>
+				<p><a href="{$Think.const.URL}contact/index.php">申请服务器</a></p>
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+				<ul>
+					<li><a href="www.miecu.net">觅库</a></li>
+					<li><a href="www.gdaib.edu.cn">GDAIB</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

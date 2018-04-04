@@ -1,0 +1,173 @@
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/vsphere
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/'.$headshot.'
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 非法操作:'.$headshot.'
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/1.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+ERR: 非法操作:1.mp4
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/1.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: 非法操作:1.mp4
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/1.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+ERR: 非法操作:1.mp4
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/1.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+ERR: 非法操作:1.mp4
+
+[ 2017-09-29T09:31:16+08:00 ] ::1 /cloud/index.php/admin/vsphere/1.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+ERR: 非法操作:1.mp4
+
+[ 2017-09-29T09:32:25+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [2] include(public/header.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 177 行.
+NOTIC: [2] include(): Failed opening 'public/header.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 177 行.
+NOTIC: [2] include(public/footer.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 254 行.
+NOTIC: [2] include(): Failed opening 'public/footer.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 254 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2017-09-29T09:32:25+08:00 ] ::1 /cloud/index.php/admin/login/'.$headshot.'
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+ERR: 非法操作:'.$headshot.'
+
+[ 2017-09-29T09:32:34+08:00 ] ::1 /cloud/index.php/admin/login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [2] include(public/header.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\d57ff7b86172fc16026a3213b745e301.php 第 177 行.
+NOTIC: [2] include(): Failed opening 'public/header.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\d57ff7b86172fc16026a3213b745e301.php 第 177 行.
+NOTIC: [2] include(public/footer.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\d57ff7b86172fc16026a3213b745e301.php 第 269 行.
+NOTIC: [2] include(): Failed opening 'public/footer.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\d57ff7b86172fc16026a3213b745e301.php 第 269 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-09-29T09:32:34+08:00 ] ::1 /cloud/index.php/admin/login/'.$headshot.'
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 非法操作:'.$headshot.'
+
+[ 2017-09-29T09:45:16+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [2] include(public/header.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 177 行.
+NOTIC: [2] include(): Failed opening 'public/header.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 177 行.
+NOTIC: [2] include(public/footer.php): failed to open stream: No such file or directory F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 254 行.
+NOTIC: [2] include(): Failed opening 'public/footer.php' for inclusion (include_path='.;C:\php\pear') F:\phpStudy\WWW\cloud\Application\Runtime\Cache\Admin\0dfec61edd66f450033aa87c28a760f4.php 第 254 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2017-09-29T09:45:17+08:00 ] ::1 /cloud/index.php/admin/login/'.$headshot.'
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 非法操作:'.$headshot.'
+

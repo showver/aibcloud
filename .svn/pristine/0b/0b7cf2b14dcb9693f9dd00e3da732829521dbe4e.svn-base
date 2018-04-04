@@ -1,0 +1,73 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class LoginController extends Controller {
+   public function login(){
+
+   	    if(!empty($_POST)){
+   			$post = I('post.');
+   			$User = M('User');
+   			$result = $User->where("username='{$post['username']}' and password='{$post['password']}'")->field('username,level')->find();
+   			//dump($result);
+   			if($result!=null){
+   				$_SESSION['username'] = $result['username'];
+   				$_SESSION['level'] = $result['level'];
+   				if($result['level']==2){
+ 					//$this->success('哈哈','Stu/stuCenter');
+   					//$this->redirect('Stu/persInfo',array('level'=>$result['level']),0,'11');
+   					$this->redirect('Stu/persInfo','',0,'');
+   				}elseif ($result['level']==1) {
+   					$this->redirect('Tea/teaCenter','',0,'');
+   				}
+   			}
+   			//$data = $result['username'];
+   			//$_SESSION["$data"] = $data;
+   			//$this->assign('aaa',$result['username']);
+   			//$this->redirect('');
+  
+
+   		}
+
+		$this->display();
+
+		
+   }
+
+   public function end(){
+
+   		unset($_SESSION['username']);
+   		$this->redirect('login','',0,'');
+
+   	//$this->redirect('/home/index','',0,'');
+
+   }
+   
+   public function register(){
+	 
+	 if(!empty($_POST)){
+
+		$post = I('post.');
+		$User = M('User');
+		$result = $User->data($post)->add();
+
+		if($result!=0){
+		$this->redirect('register',array(),'2','注册成功');
+		}else{
+		echo '注册失败';
+		}
+		
+	  }else{
+		$this->display();
+	  }
+   }
+
+   public function forgot(){
+		$this->display();
+   }
+
+   public function perInfo(){
+		$this->display();
+   }
+
+
+}

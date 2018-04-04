@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>AIB云平台</title>
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+
+<style type="text/css">
+    ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .container{
+        width: 80vw;
+        margin: 0 auto;
+        background: whitesmoke;
+    }
+    .pers_info>ul{
+        box-shadow: 0 0 6px gray;
+        background: white;
+        margin-left: -15px;
+    }
+    .pers_info>ul>li{
+        margin:10px;
+        padding: 10px;
+    }
+    .pers_info>ul>li img{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .pers_info>ul>li div{
+        height: 100px;
+        display: table-cell;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+    .pers_info .info_list{
+        font-size: 1.6rem;
+    }
+    .pers_info .info_list li{
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 2px;
+    }
+    .pers_info .info_list li:hover{
+        background: lightgrey;
+    }
+    .pers_info .info_list li i{
+        margin: 0 20px;
+    }
+
+    .pers_content{
+        height: 500px;
+        background: white;
+        margin: 10px 0;
+        padding: 20px;
+    }
+    .pers_content section{
+
+    }
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <section class="col-sm-4 pers_info">
+            <ul>
+                <li class="row">
+                    <img src="{$Think.const.URL}img/member_270x210.jpg" class="img-circle">
+                    <div>
+                        <!-- <i class="icon icon-edit"> -->
+                        <h4>青青草</h4>
+                        <p class="text-muted">加入时间    1个月前</p>
+                    </div>
+                </li>
+                <ul class="info_list">
+                    <li style="background: lightgrey;">
+                        <i class="icon icon-user"></i>个人资料
+                    </li>
+                    <li>
+                        <i class="icon icon-user"></i>个人资料
+                    </li>
+                </ul>
+
+            </ul>
+        </section>
+        <section class="col-sm-8 pers_content">
+            <section>
+                <form>
+                    <div class="form-group">
+                        <label for="nc">昵称</label>
+                        <input type="text" class="form-control" name="nc" placeholder="输入新昵称">
+                    </div>
+                    <div class="form-group">
+                        <label for="yx">邮箱</label>
+                        <input type="text" class="form-control" name="yx" placeholder="更改你的邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="dh">电话</label>
+                        <input type="text" class="form-control" name="dh" placeholder="更改你的联系方式">
+                    </div>
+                    <div class="form-group">
+                        <label for="mm">密码</label>
+                        <input type="text" class="form-control" name="mm" placeholder="更改密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="rmm">再次输入密码</label>
+                        <input type="text" class="form-control" name="rmm" placeholder="再次输入密码">
+                    </div>
+                </form>
+            </section>
+            <section style="display: none;">
+                <form>
+                    <div class="form-group">
+                        <label for="nc">昵称</label>
+                        <input type="text" class="form-control" name="nc" placeholder="输入新昵称">
+                    </div>
+                    <div class="form-group">
+                        <label for="yx">邮箱</label>
+                        <input type="text" class="form-control" name="yx" placeholder="更改你的邮箱">
+                    </div>
+                </form>
+            </section>
+
+        </section>
+    </div>
+
+
+
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    /*-----  pers_content  -----*/
+        $('.info_list li').click(function(){
+            var index = $(this).index();
+            $(this).css('background','lightgrey');
+            $(this).siblings('li').css('background','');
+            $('.pers_content section').eq(index).show();
+            $('.pers_content section').eq(index).siblings('section').hide();
+        });
+
+
+    });
+</script>
+</body>
+
+</html>

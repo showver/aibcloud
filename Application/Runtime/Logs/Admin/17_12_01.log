@@ -1,0 +1,77 @@
+[ 2017-12-01T18:53:22+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-01T18:53:31+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0070s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='admin' or stu_number='admin') and password='0.123' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-12-01T18:53:32+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+

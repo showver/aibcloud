@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="zh">
+
+</head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小组介绍</title>
+
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script src="{$Think.const.URL}js/public.js"></script>
+
+<!--Theme custom css -->
+<!-- <link rel="stylesheet" href="{$Think.const.URL}css/style.css"> -->
+<style type="text/css">
+
+    body {
+        background-color: #ECEFF1;
+        color: #37474F;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    .separator {
+        width: 10px;
+        height: 10px;
+        background: #e74c3c;
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+        border-radius: 50%;
+        margin:15px;
+    }
+    .head_title{
+        clear: both;
+        min-height: 80px;
+        height: 80px;
+        overflow: hidden;
+    }
+    .head_title h2{
+        height: 40px;
+    }
+    .team_info_cont{
+        width: 80%;
+        margin: 2vh auto;
+        text-align: center;
+    }
+    .team_info_cont img{
+        display: inline-block;
+        text-align: left;
+    }
+    .team_info_cont article p{
+        font-size: 18px;
+        margin-top: 20px;
+        text-indent: 2em;
+    }
+    @media screen and (max-width: 768px){
+        .separator {
+            margin:10px;
+        }
+    }
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="htmleaf-container">
+
+    	<div class="head_title text-center" style=" height: 110px; overflow: hidden;">
+            <h2>云计算小组介绍</h2>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+        </div><!-- End off Head_title -->
+
+
+
+    	<div class='team_info_cont'>
+
+            <img class="col-md-5 col-xs-12" src="{$Think.const.URL}img/team-info.png" alt="">
+
+            <article class="col-md-7 text-left">
+
+                <p>随着信息化校园的建设和云计算的升温，基于云计算的应用交付逐步成为教育行业发展的必然趋势。传统的教学方式显然已经不能满足当 前教学发展的要求，同时，教学过程中的一系列问题也严重影响了教学质量和教学进度。AIB云计算小组应学校的需求，主动参与这个极
+
+                    具挑战性的课题，利用先进的信息技术为教育创新营造有利的环境，为广大师生提供更便捷的网络服务。
+
+                </p>
+
+                <p>AIB云计算小组是学生自发组织的一个团队，集结了一群热爱学习的伙伴。团队中的每个成员各有所长，有的擅长云计算的实施架构，有的擅长网络应用的前端开发，还有的擅长后端应用的开发。他们将自己所学的知识付诸于实践，实现自我的价值。在学习的过程中掌握新技术
+
+                    ，在交流的过程中相互促进，了解自我，在实践的过程中懂得一个团队运作的方式。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

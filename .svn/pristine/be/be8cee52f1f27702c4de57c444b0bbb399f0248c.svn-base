@@ -1,0 +1,595 @@
+<?php if (!defined('THINK_PATH')) exit();?><nav class="navbar navbar-default my-nav" role="navigation">
+  <div class="container-fluid">
+  <div class="navbar-header nav-header col-md-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a href="/cloud/index.php" style="cursor: pointer;">
+        <img src="<?php echo (URL); ?>img/logo.png"  alt="AIB-云平台">
+      </a>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="collapse navbar-collapse nav-content col-md-9" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+          <li><a href="/cloud/index.php">首页</a></li>
+          <li class="dropdown" id="hoverdown-1">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" >
+                  云计算小组 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  AIB云平台 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-3">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  服务与支持 <b class="caret"></b>
+              </a>
+          </li>
+          <li><a href="deve-prog.php">开发历程</a></li>
+          <li><a href="login/touch-us.php">联系我们</a></li>
+          <li>
+            <div class="input-group" style="cursor: pointer;margin:10px 20px; width:12vw;">
+                <input type="text" class="form-control" style="height:25px;">
+                <span class="input-group-addon" style="height:25px; font-size: 8px; padding:0 8px;">搜索</span>
+            </div>
+          </li>
+      
+      <li><a href="login/login.php" class="login">登陆</a></li>
+                    <li><a href="login/register.php" class="login">注册</a></li>
+      
+ 
+            <li class="dropdown" style="width:80px;">
+                    <div  class="dropdown-toggle" data-toggle="dropdown">
+                       <img src="'.$headshot.'" class="img-circle" style="width:36px; height:36px;  margin: 5px 10px; cursor: pointer;">
+                    </div>
+                   <ul class="dropdown-menu">
+                       <li><a href="'.$person_center.'" class="login">个人中心</a></li>
+                       <li><a href="personal-enter/pers-info.php" class="login">修改资料</a></li>
+                       <li><a href="public/over.php" class="login" id="over">退出</a></li>
+                   </ul>
+                </li>
+  
+
+      </ul>
+      <div class="back" style="height: 3px; background-color: #0CF;  position: absolute; bottom: 2px; left:15px; width:65px;"></div>
+  </div>
+
+  </div>
+
+
+
+  <section id="showdown-1">
+    <ul>
+      <li class="lead">小组介绍</li>
+      <li><a href="/cloud/index.php/Admin/team/teamInfo">团队介绍</a></li>
+      <li><a href="/cloud/index.php/Admin/team/joinus">加入我们</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">团队Team</li>
+      <li><a href="/cloud/index.php/Admin/team/team">指导老师</a></li>
+      <li><a href="/cloud/index.php/Admin/team/team">小组成员</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-2">
+    <ul>
+      <a href="/cloud/index.php/Admin/platform/platform">
+        <li class="lead">平台入口</li>
+      </a>
+      <li><a href="/cloud/index.php/admin/openstack/openstack">OpenStack</a></li>
+      <li><a href="/cloud/index.php/admin/vsphere/vsphere">vSphere</a></li>
+      <li><a href="/cloud/index.php/admin/Docker/docker">Docker</a></li>
+      <li><a href="/cloud/index.php/admin/mirrors/mirrors">CentOS</a></li>
+      <li><a href="/cloud/index.php/admin/svn/subversion">SVN</a></li>
+      <li><a href="/cloud/index.php/admin/lanDisk/onlineDisk">内网云盘</a></li>
+      <li><a href="/cloud/index.php/admin/Mail/mail">邮件系统</a></li>
+      <li><a href="/cloud/index.php/admin/stu/stuIndex">学生站点</a></li>
+      <li>微信小程序</li>
+    </ul>
+
+    <ul>
+      <li class="lead">平台架构</li>
+      <li><a href="/cloud/index.php/Admin/platform/platformFrame">底层硬件架构</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-3">
+    <ul>
+      <li class="lead">用户服务</li>
+      <li><a href="cloud-team/tips.php">服务公告</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">帮助中心</li>
+      <li><a href="help.php">文档</a></li>
+    </ul>
+  </section>
+
+</nav>
+
+<style type="text/css">
+  nav section{
+    position: absolute;top:53px;min-width:200px;min-height: 200px;transform:translateX(-50%);left:50%;display: flex;justify-content: center;color: white;background: rgba(0, 0, 0, 0.8);font-size: 1.5rem;padding:20px;visibility: hidden;
+  }
+  nav section ul{
+    float: left;width:150px;margin-left:7vw; padding:0;color: rgba(255,255,255,0.6);
+  }
+  nav section ul:last-child{
+    margin-right: 7vw;
+  }
+  nav section ul .lead{
+    font-size: 1.5rem !important;margin:0 !important;font-weight: bold; border-bottom:1px solid rgba(255,255,255,0.6);color: white;padding-bottom: 5px;
+  }
+  nav section ul a .lead:hover{
+    color: red;
+    cursor: pointer;
+  }
+  nav section ul a{
+    color: rgba(255,255,255,0.6);
+  }
+  nav section ul a:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav section ul li{
+    margin: 0;
+    padding-top: 3px;
+    list-style: none;
+  }
+  nav section ul li:nth-child(2){
+    margin-top: 5px;
+  }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>学生个人中心</title>
+<link rel="stylesheet" href="<?php echo (URL); ?>css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo (URL); ?>public.css">
+<script src="<?php echo (URL); ?>js/jquery-3.2.1.min.js"></script>
+<script src="<?php echo (URL); ?>js/bootstrap.min.js"></script>
+<style>
+	img,
+	body {
+	    overflow: hidden;
+	    margin: 0;
+	}
+	article{
+		width: 80vw;
+		margin: 0 auto;
+		position: relative;
+	}
+	article div{
+		overflow: auto;
+	}
+	article h3{
+		font-size: 2.4rem;
+		height: 40px;
+		margin: 0;
+		margin-top: 5vh;
+		display:inline-block;
+		min-width: 150px;
+		border-bottom: 2px solid green;
+	}
+	article nav{
+		margin-top: 5vh;
+	}
+	article nav div{
+		height: 40px;
+	}
+	article nav button{
+		font-size: 1.5rem;
+	}
+	article nav span{
+		margin-left: 2vw;
+		cursor: pointer;
+		/* color: #E29920; */
+		border: 1px solid #E29920;
+		padding: 5px;
+		font-size: 1.5rem;
+	}
+	article nav span:hover{
+		border: 1px solid #E29920;
+		border-radius: 8px;
+	}
+	.on{
+		/* margin-top: -10px; */
+		border: 1px solid green;
+		font-weight: bold;
+		color: green;
+	}
+	article .stu_i_container{
+		width: 80vw;
+		overflow: hidden;
+	}
+	article .stu_i_container:nth-child(1){
+		height: 40vh;
+	}
+	.stu_i_container .stu_i_item{
+		width: 18vw;
+		height: inherit;
+		margin: 4vh 1vw;
+		float: left;
+	}
+	.stu_i_item img{
+		width: inherit;
+		height: 150px;
+		display: flex;
+    	justify-content: space-around;
+
+	}
+	.stu_i_item h4{
+		font-size: 16px;
+		margin: 0;
+		text-align: center;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.stu_i_item div{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		background: #D4D4D4;
+		opacity: 1;
+		transition: all 0.5s ease-in-out;
+		overflow: hidden;
+	}
+	.stu_i_item:hover div{
+		opacity: 0;
+	}
+	.stu_i_item div span:last-child::before{
+		content: url('<?php echo (URL); ?>img/dialogue.png');
+	}
+	.stu_i_item div span:first-child::before{
+		content: url('<?php echo (URL); ?>img/eye.png');
+	}
+	@media screen and (max-width: 768px){
+		.stu_i_container .stu_i_item{
+			width: 24vw;
+			height: inherit;
+			margin: 2vh 1vw;
+			float: left;
+		}
+	}
+</style>
+
+</head>
+<body style="background: none; overflow-y: auto;overflow-x: hidden;">
+
+	<article>
+		<h3 class="col-md-2">优秀作品</h3>
+		<div class="stu_i_container good_job">
+		</div>
+	</article>
+	<article class="stu_article">
+		<h3 class="col-md-2">学生作品</h3>
+		<nav class="col-md-10">
+			<div class="form-group col-md-5">
+				<input type="text" id="sear_condition">
+				<button id="search">搜索</button>
+			</div>
+			<div class="col-md-7">
+				<span class="hvr-wobble-vertical on" name="网络1班">网络1班</span>
+				<span class="hvr-wobble-vertical" name="网络2班">网络2班</span>
+				<span class="hvr-wobble-vertical" name="其他">其他</span>
+			</div>
+		</nav>
+		<div class="stu_i_container stu_job_gra1">
+		</div>
+		<ul id='paging' class="pagination pagination-lg" style="display: flex; justify-content: center;">
+		</ul>
+	</article>
+
+    </div>
+	<script type="text/javascript">
+	/*获取总页面页数*/
+		//声明全局变量search_condition，用于搜索内容
+		//sear_condition = '';
+		//声明全局变量sort，用户存放搜索类别
+		//sort = '';
+		$.post('Controller/stu_indexpaging.php',{oper:'count'},function(data,status,xhr){
+			//判断是否成功
+			if(status=='success'){
+				//最前面的页数
+				var paging_html = '<li><a href="#">&laquo;</a></li>';
+				for(var i=1;i<=data;i++){
+					//拼接页数
+					paging_html = paging_html+'<li><a href="#">'+i+'</a></li>';
+				}
+				//最后面的页数
+				paging_html = paging_html+'<li><a href="#">&raquo;</a></li>';
+				//写入html
+				$('#paging').html(paging_html);
+				//点击时
+				$('#paging li').click(function(e){
+					e.preventDefault();
+					var max = $('#paging li').length;
+					var pageindex=$(this).index();
+					if(pageindex == (max-1)){
+						pageindex = pageindex-1;
+					}
+					if(pageindex == 0){
+						pageindex = 1;
+					}
+					$.post('Controller/stu_indexpaging.php',{oper:'paging',pageindex:pageindex},function(data,status,xhr){
+						//数据成功时执行操作，不执行任何东西
+						if(status=='success'){
+						//判断数组里面是否有东西没有则提示，有则代入数据
+							if(data=='[]'){
+							$('.stu_job_gra1').html('');
+							isEmpty(".stu_job_gra1","请上传你的作品。。。");
+							}else{
+								var temp= "{"Person":[" + data +"]}";
+								var data = eval('('+temp+')');
+								var secondcontent = '';
+								for(var i =0;i<data.Person[0].length;i++){
+									secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+								}
+								$('.stu_i_container:eq(1)').html(secondcontent);
+							}
+							$('.stu_i_item').click(function(){
+								var userid = $(this).attr("name");
+								window.location.href='stu-message.php?userid='+userid;
+							})
+						}
+					})
+				});
+			}
+		});
+	/*-----  判断内容是否为空  ------*/
+		function isEmpty($name,$text){
+			var eleCont = $($name).text().trim();
+			if( eleCont == "" ){
+			var temp = '<div style="text-align:center; font-size:2rem; letter-spacing:10px;margin:7vh 0;" class="text-muted">'+
+				$text+
+				'</div>';
+			$($name).html(temp);
+			}
+		}
+		/*-----  ajax请求数据  ------*/
+		$.get('Controller/stu_indexController.php',function(data,status,xhr){
+			/*-----  得到数据  ------*/
+			var temp= "{"Person":[" + data +"]}";
+			var data = eval('('+temp+')');
+			/*-----  拼接数据  ------*/	
+			var firstcontent = '';
+			for(var i =0;i<data.Person[0].length;i++){
+				firstcontent = firstcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+			}
+			var secondcontent = '';
+			for(var i =0;i<data.Person[1].length;i++){
+				secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[1][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[1][i]['s_webpath']+"\'><h4>"+data.Person[1][i]['s_webname']+"</h4><div><span>"+data.Person[1][i]['s_view']+"</span><span>"+data.Person[1][i]['s_nick']+"</span></div></div>";
+			}
+			/*-----  在指定地方输出  ------*/
+			$('.stu_i_container:eq(0)').html(firstcontent);
+			$('.stu_i_container:eq(1)').html(secondcontent);
+			/*-----  判断内容是否为空  ------*/
+			isEmpty(".good_job","优秀作品正在评选中。。。");
+			isEmpty(".stu_job_gra1","请上传你的作品。。。");
+		/*-----  点击显示stu_message页面  -----*/
+			$('.stu_i_item').click(function(){
+				var userid = $(this).attr("name");
+				window.location.href='stu-message.php?userid='+userid;
+			})
+		});
+	/*-----  无缝滚动  ------*/
+		var mq = window.matchMedia('@media all and (max-width: 768px)');
+		if(mq.matches) {
+		    // 浏览器宽度大于768
+		    var timer;
+		    function scroll(wid){
+		    	$('.good_job .stu_i_item:eq(0)').animate({"margin-left":"-18vw"},function(){
+		    		$('.stu_i_item').eq(0).appendTo('.stu_i_container:eq(0)');
+		    		$('.stu_i_item').css({"margin-left":"1vw"});
+		    	})
+		    }
+		    timer=setInterval(scroll,2000);
+		} else {
+		    var timer;
+		    function scroll(){
+		    	$('.good_job  .stu_i_item:eq(0)').animate({"margin-left":"-24vw"},function(){
+		    		$('.stu_i_item').eq(0).appendTo('.stu_i_container:eq(0)');
+		    		$('.stu_i_item').css({"margin-left":"1vw"});
+		    	})
+		    }
+		    timer=setInterval(scroll,2500);
+		}
+	/*----- 开始js操作  -----*/
+	$(document).ready(function() {
+		/*-----  判断滚动  -----*/
+			$('.stu_i_container:eq(0)').on({
+				mouseover:function(){
+					clearInterval(timer);
+				},
+				mouseout:function(){
+					timer=setInterval(scroll,2000);
+				}
+			})
+		/*-----  点击显示不同分类的学生作品  -----*/
+			$('.stu_article nav span').click(function(){
+				$(this).addClass("on").siblings('span').removeClass("on");
+				var index=$(this).index();
+				$('.stu_article>div').eq(index).show().siblings("div").hide();
+				var sort= $(this).attr("name");
+				var type = 'sort';
+				$.post('Controller/stu_indexpaging.php',{oper:'count',type:type,sort:sort},function(data,status,xhr){
+				//判断是否成功
+					if(status=='success'){
+						if(data=='[]'){
+							$('#paging').html('');
+						}else{
+							//最前面的页数
+							var paging_html = '<li><a href="#">&laquo;</a></li>';
+							for(var i=1;i<=data;i++){
+								//拼接页数
+								paging_html = paging_html+'<li><a href="#">'+i+'</a></li>';
+							}
+							//最后面的页数
+							paging_html = paging_html+'<li><a href="#">&raquo;</a></li>';
+							//写入html
+							$('#paging').html('');
+							$('#paging').html(paging_html);
+							//点击时
+							$('#paging li').click(function(e){
+								e.preventDefault();
+								var max = $('#paging li').length;
+								var pageindex=$(this).index();
+								if(pageindex == (max-1)){
+									pageindex = pageindex-1;
+								}
+								if(pageindex == 0){
+									pageindex = 1;
+								}
+								$.post('Controller/stu_indexpaging.php',{oper:'paging',type:type,pageindex:pageindex,sort:sort},function(data,status,xhr){
+									//数据成功时执行操作，不执行任何东西
+									if(status=='success'){
+									//判断数组里面是否有东西没有则提示，有则代入数据
+										if(data=='[]'){
+											$('.stu_job_gra1').html('');
+											isEmpty(".stu_job_gra1","请上传你的作品。。。");
+										}else{
+											var temp= "{"Person":[" + data +"]}";
+											var data = eval('('+temp+')');
+											var secondcontent = '';
+											for(var i =0;i<data.Person[0].length;i++){
+												secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+											}
+											$('.stu_i_container:eq(1)').html('');
+											$('.stu_i_container:eq(1)').html(secondcontent);
+										}
+										$('.stu_i_item').click(function(){
+											var userid = $(this).attr("name");
+											window.location.href='stu-message.php?userid='+userid;
+										})
+									}
+								})
+							});
+						}
+					}
+				});
+				$.post('Controller/stu_indexpaging.php',{oper:'sort',type:type,sort:sort},function(data,status,xhr){
+					//数据成功时执行操作，不执行任何东西
+					if(status=='success'){
+						//判断数组里面是否有东西没有则提示，有则代入数据
+						if(data=='[]'){
+							$('.stu_job_gra1').html('');
+							isEmpty(".stu_job_gra1","请上传你的作品。。。");
+						}else{
+							var temp= "{"Person":[" + data +"]}";
+							var data = eval('('+temp+')');
+							var secondcontent = '';
+							for(var i =0;i<data.Person[0].length;i++){
+								secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+							}
+							$('.stu_i_container:eq(1)').html(secondcontent);
+						}
+						$('.stu_i_item').click(function(){
+								var userid = $(this).attr("name");
+								window.location.href='stu-message.php?userid='+userid;
+						})
+					}
+				})
+			});
+			//点击搜索
+			$('#search').click(function(){
+				//获取搜索框里面的内容
+				var sear_condition = $('#sear_condition').val();
+				var type = 'search';
+				$.post('Controller/stu_indexpaging.php',{oper:'count',type:type,sear_condition:sear_condition},function(data,status,xhr){
+			//判断是否成功
+					if(status=='success'){
+						//最前面的页数
+						var paging_html = '<li><a href="#">&laquo;</a></li>';
+						for(var i=1;i<=data;i++){
+							//拼接页数
+							paging_html = paging_html+'<li><a href="#">'+i+'</a></li>';
+						}
+						//最后面的页数
+						paging_html = paging_html+'<li><a href="#">&raquo;</a></li>';
+						//写入html
+						$('#paging').html('');
+						$('#paging').html(paging_html);
+						$('.stu_i_item').click(function(){
+							var userid = $(this).attr("name");
+							window.location.href='stu-message.php?userid='+userid;
+						})
+						//点击时
+						$('#paging li').click(function(e){
+							e.preventDefault();
+							var max = $('#paging li').length;
+							var pageindex=$(this).index();
+							if(pageindex == (max-1)){
+								pageindex = pageindex-1;
+							}
+							if(pageindex == 0){
+								pageindex = 1;
+							}
+							var sear_condition = $('#sear_condition').val();
+							$.post('Controller/stu_indexpaging.php',{oper:'paging',pageindex:pageindex,sear_condition:sear_condition},function(data,status,xhr){
+								//数据成功时执行操作，不执行任何东西
+								if(status=='success'){
+								//判断数组里面是否有东西没有则提示，有则代入数据
+									if(data=='[]'){
+										$('.stu_job_gra1').html('');
+										isEmpty(".stu_job_gra1","请上传你的作品。。。");
+									}else{
+										var temp= "{"Person":[" + data +"]}";
+										var data = eval('('+temp+')');
+										var secondcontent = '';
+										for(var i =0;i<data.Person[0].length;i++){
+											secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+										}
+										$('.stu_i_container:eq(1)').html('');
+										$('.stu_i_container:eq(1)').html(secondcontent);
+									}
+								}
+								$('.stu_i_item').click(function(){
+									var userid = $(this).attr("name");
+									window.location.href='stu-message.php?userid='+userid;
+								})
+							})
+						});
+					}
+				});
+				//输出搜索的结果
+				$.post('Controller/stu_indexpaging.php',{oper:'search',sear_condition:sear_condition},function(data,status,xhr){
+					//数据成功时执行操作，不执行任何东西
+					if(status=='success'){
+						//判断数组里面是否有东西没有则提示，有则代入数据
+						if(data=='[]'){
+							$('.stu_job_gra1').html('');
+							isEmpty(".stu_job_gra1","请上传你的作品。。。");
+						}else{
+							var temp= "{"Person":[" + data +"]}";
+							var data = eval('('+temp+')');
+							var secondcontent = '';
+							for(var i =0;i<data.Person[0].length;i++){
+								secondcontent = secondcontent + "<div class='stu_i_item' name=\'"+data.Person[0][i]['s_userid']+"\'><img src='<?php echo (URL); ?>"+data.Person[0][i]['s_webpath']+"\'><h4>"+data.Person[0][i]['s_webname']+"</h4><div><span>"+data.Person[0][i]['s_view']+"</span><span>"+data.Person[0][i]['s_nick']+"</span></div></div>";
+							}
+							$('.stu_i_container:eq(1)').html(secondcontent);
+						}
+					}
+				})
+			})
+		});
+	</script>
+</body>
+</html>
+
+<footer style="position: relative;">
+    <span>Builder：<a href="">AIB云计算小组</a></span>
+    <span>Copyright © 2017 <a href="">AIB云计算小组</a></span>
+</footer>

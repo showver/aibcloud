@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <title>AIB云平台 - online-disk</title>
+    <style type="text/css">
+
+        
+        body {
+            background-color: #ECEFF1;
+            color: #37474F;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+        .main{
+            width:80vw; 
+            height: 30vh; 
+            min-height: 500px;
+            margin:0 auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main img{
+            /* width: 40vw; */
+            max-width:536px;
+            max-height:355px; 
+        }
+        
+    </style>  
+</head>
+
+<body style="overflow-y: auto;">
+
+    
+    <div class="main" style="height: 90vh;">
+    	<img src="{$Think.const.URL}img/expected.png" class="col-xs-12">
+    </div>
+
+
+</body>
+
+</html>

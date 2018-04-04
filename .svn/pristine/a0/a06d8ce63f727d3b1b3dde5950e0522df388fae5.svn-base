@@ -1,0 +1,67 @@
+<?php
+session_start();
+require_once('mysql.php');
+require_once('./function/image.func.php');
+if('login'==$_GET['act']){
+	$username = mysqli_real_escape_string($conn,$_POST['username']);
+	$password = mysqli_real_escape_string($conn,$_POST['password']);
+	$sql = "select username,level from cl_user where username='{$username}' and password='{$password}' ";
+	$row = getOne($conn,$sql);
+	// print_r($row);
+	 if($row != null){
+			$_SESSION['username'] = $row['username'];
+			if($row['level']==2){
+			echo '登录成功2';
+			// header("Location:../platform-enter/stu-center.php");
+			exit;
+			}elseif($row['level']==1){
+				echo '登录成功1';
+				exit;
+			}elseif($row['level']==1){
+				echo '登录成功0';
+				exit;
+			}
+		}else{
+			echo "用户名或密码错误";exit;
+		}
+	
+
+}elseif('upload'==$_GET['act']){
+	//print_r($_FILES['png']['tmp_name']);
+	//move_uploaded_file($_FILES['png']['tmp_name'],'./uploadImg/66.png');
+	//$i = image_thumb($_FILES['png']['tmp_name'],40,40);
+	//print_r($i);
+	if($_FILES!=null){
+		 if(!@getimagesize($_FILES['png']['tmp_name'])){
+		  echo '不是真实的图片';exit;
+	  	}
+		image_thumb($_FILES['png']['tmp_name'],40,40);
+		echo "修改成功";exit;
+	}else{
+		echo '请选择要修改的图片';exit;
+	}
+
+}elseif('upnet'==$_GET['act']){
+	//print_r($_FILES);exit;
+	if($_FILES!=null){
+		 if(!@getimagesize($_FILES['wfile']['tmp_name'])){
+		  echo '不是真实的图片';exit;
+	  	}
+		image_thumb($_FILES['wfile']['tmp_name'],80,80,1);
+
+		$netname = mysqli_real_escape_string($conn,$_POST['netname']);
+		$netdescribt = mysqli_real_escape_string($conn,$_POST['netdescribt']);
+		$sql = "update cl_user set netname='{$netname}',netdescribt='{$netdescribt}' where username={$_SESSION['username']} ";
+		$q = mysqli_query($sql);
+		if($q){
+			echo "修改成功";exit;
+		}
+	
+	}else{
+		echo '请选择要修改的图片';exit;
+	}
+
+}
+
+?>
+

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AIB网络工作室 - 云平台</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+
+    <style type="text/css">
+
+        body{
+            background: url('{$Think.const.URL}img/homebg.jpg') fixed;
+            background-size: cover;
+            overflow-x: hidden;
+            height: 90vh;
+        }
+       #f {
+           background: grey;
+           display: -webkit-box;
+           display: -ms-flexbox;
+
+           display: flex;
+           -ms-flex-pack: distribute;
+           justify-content: space-around;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+           -webkit-box-orient: vertical;
+           -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+           flex-direction: column;
+           width: 100vw;
+           height: 87.5vh;
+           /* min-height: 800px; */
+           position: absolute;
+           top: 40px;
+           left: 0;
+           background: rgba(0, 0, 0, 0.4);
+           z-index: 1;
+       }
+
+       #f h1 {
+           color: rgba(255, 255, 255, 1);
+           font-size: 7rem;
+           font-weight: bolder;
+       }
+
+       #f h2 {
+           color: rgba(255, 255, 255, 1);
+           font-size: 4rem;
+           padding: 5px;
+           border-top: 3px solid white;
+           border-bottom: 3px solid white;
+       }
+
+       #f article {
+           width: 60vw;
+           height: 30vh;
+           overflow-y: auto;
+       }
+
+       #f article p {
+           text-indent: 3.6rem;
+           color: white;
+           font-size: 1.8rem;
+       }
+
+       #f article::-webkit-scrollbar {
+           width: 3px;
+           background: rgba(0, 0, 0, 0.7);
+       }
+
+       #f article::-webkit-scrollbar-thumb {
+           background: rgba(255, 255, 255, 0.5);
+       }
+
+       #f div a {
+           display: block;
+           width: 12vw;
+           height: 40px;
+           float: left;
+           background: black;
+           margin: 0 0.8vw;
+           border-radius: 10px;
+           text-align: center;
+           line-height: 8vh;
+           font-size: 1rem;
+           font-weight: bold;
+           color: white;
+           text-decoration: none;
+           word-break: break-all;
+       }
+       #s {
+           position: absolute;
+           top: 40px;
+           left: 0;
+           z-index: 0;
+           opacity: 0;
+           width: 100vw;
+           height: 87.5vh;
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: flex;
+           -webkit-box-pack: center;
+           -ms-flex-pack: center;
+           justify-content: center;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+           background: rgba(0, 0, 0, 0.4);
+
+       }
+
+       #s img {
+           width: 30vw;
+           height: 60vh;
+           margin: 2vw;
+       }
+
+       #s article {
+           width: 40vw;
+           height: 60vh;
+           color: white;
+           overflow-y: auto;
+       }
+
+       #s article h2 {
+           padding-left: 2rem;
+           border-left: 1rem solid orange;
+           font-size: 2rem;
+       }
+
+       #s article p {
+           text-indent: 2rem;
+           cursor: default;
+       }
+
+       #s article a {
+           display: block;
+           text-decoration: none;
+           color: white;
+           width: 200px;
+           height: 50px;
+           font-size: 1.5rem;
+           font-weight: bold;
+           text-align: center;
+           line-height: 50px;
+           background: orange;
+           border: 2px solid white;
+           border-radius: 10px;
+           box-shadow: 1px 3px 3px black;
+           margin: 10px;
+       }
+
+       #s article::-webkit-scrollbar {
+           width: 3px;
+           background: rgba(0, 0, 0, 0.7);
+       }
+
+       #s article::-webkit-scrollbar-thumb {
+           background: rgba(255, 255, 255, 0.5);
+       }
+
+       #t {
+           position: absolute;
+           top: 40px;
+           left: 0;
+           width: 100vw;
+           height: 87.5vh;
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: flex;
+           -webkit-box-pack: center;
+           -ms-flex-pack: center;
+           justify-content: center;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+           background: rgba(0, 0, 0, 0.4);
+           opacity: 0;
+       }
+       #t img {
+           width: 30vw;
+           height: 60vh;
+           margin: 2vw;
+       }
+
+       #t article {
+           width: 40vw;
+           height: 60vh;
+           color: white;
+           overflow-y: auto;
+       }
+
+       #t article h2 {
+           padding-left: 2rem;
+           border-left: 1rem solid orange;
+           font-size: 2rem;
+       }
+
+       #t article p {
+           text-indent: 2rem;
+           cursor: default;
+       }
+
+       #t article a {
+           display: block;
+           text-decoration: none;
+           color: white;
+           width: 200px;
+           height: 50px;
+           font-size: 1.5rem;
+           font-weight: bold;
+           text-align: center;
+           line-height: 50px;
+           background: orange;
+           border: 2px solid white;
+           border-radius: 10px;
+           box-shadow: 1px 3px 3px black;
+           margin: 10px;
+       }
+
+       #t article::-webkit-scrollbar {
+           width: 3px;
+           background: rgba(0, 0, 0, 0.7);
+       }
+
+       #t article::-webkit-scrollbar-thumb {
+           background: rgba(255, 255, 255, 0.5);
+       }
+       #left {
+           width: 50px;
+           height: 30px;
+           position: fixed;
+           top: 50vh;
+           left: 0;
+           z-index: 20;
+           -webkit-transform: rotate(-90deg);
+           transform: rotate(-90deg);
+       }
+       #left:hover{
+           background: rgba(255, 255, 255, 0.5);
+       }
+       #right {
+           width: 50px;
+           height: 30px;
+           position: fixed;
+           top: 50vh;
+           right: 0;
+           z-index: 20;
+           -webkit-transform: rotate(90deg);
+           transform: rotate(90deg);
+       }
+       #right:hover{
+           background: rgba(255, 255, 255, 0.5);
+       }
+       @media only screen and (max-width: 768px){
+           #f h1{
+               font-size: 3rem;
+           }
+           #f h2{
+               font-size: 2rem;
+           }
+           #f article p{
+               text-indent: 2rem;
+               font-size: 1rem;
+           }
+
+       }
+       @media only screen and (min-height:1000px){
+           #s, #t, #f{
+               height: 92vh;
+               top: 40px;
+           }
+       }
+   </style>
+</head>
+
+<body>
+
+    <div id="f" class='main' >
+        <h1>AIB网络工作室-云平台</h1>
+        <h2>什么是云计算?</h2>
+        <article>
+            <p>通俗的理解，“把所有的本地的事，都可以放到云端来完成就是云计算了。”</p>
+            <p>再通俗具体点，就是：未来的电脑将不需要主机，只需要一个显示器。原来机箱里的东西哪去了?它们将全部存储在“云计算”中，而这个 “云计算”就是一台超级计算机或是很多超级计算机的集合,当你要使用的时候，你只要给它点小费，他们即可同时为你工作服务。
+            </p>
+            <p>一些游戏玩家渴望追求带劲的显卡、CPU，未来这些统统不需要，你只需要一套键盘鼠标 和显示器，就能实现“发烧友”的愿望，而这背后的支撑者，就是“云计算”。
+            </p>
+        </article>
+
+    </div>
+    <div id="s" class='main'>
+        <a href="__MODULE__/team/joinus"><img src="{$Think.const.URL}img/joinus.png" style="width: 70vw;  margin-left: 8vw;"></a>
+    </div>
+    <div id="t" class='main'>
+        <a href="contact/index.php"><img src="{$Think.const.URL}img/shenqing.png" style="width: 40vw; margin-left: 8vw;"></a>
+    </div>
+
+    
+    <footer style="position: fixed;">
+        <span>Builder：<a href="">AIB云计算小组</a></span>
+        <span>Copyright © 2017 <a href="">AIB云计算小组</a></span>
+    </footer>
+
+
+
+    <img src="{$Think.const.URL}img/arrow.png" alt="" id="left">
+    <img src="{$Think.const.URL}img/arrow.png" alt="" id="right">
+
+
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/index.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+</body>
+
+</html>

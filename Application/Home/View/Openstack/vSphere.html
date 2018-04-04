@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenStack</title>
+  <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+  <link rel="stylesheet" href="{$Think.const.URL}public.css">
+
+  <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+  <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+<!-- fancybox -->
+  <script type="text/javascript" src="{$Think.const.URL}plugin/fancyBox/lib/jquery-1.8.2.min.js"></script>
+  <script src="{$Think.const.URL}js/public.js"></script>
+  <script type="text/javascript" src="{$Think.const.URL}plugin/fancyBox/source/jquery.fancybox.js?v=2.1.3"></script>
+  <link rel="stylesheet" type="text/css" href="{$Think.const.URL}plugin/fancyBox/source/jquery.fancybox.css?v=2.1.2" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{$Think.const.URL}plugin/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="{$Think.const.URL}plugin/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <style type="text/css">
+    html {
+      overflow-y: scroll;
+    }
+    :root {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    :root body {
+      position: absolute;
+    }
+
+    body{
+      position: relative;
+    }
+
+
+    .list {
+      display: flex;
+      justify-content: center;
+    }
+    .list li{
+      float: left;
+      list-style: none;
+      margin: 0 10px;
+    }
+    .list li img{
+      width: 250px;
+      height: 180px;
+    }
+  </style>
+
+</head>
+<body style="overflow-x: hidden;width:100vw;background-color: #ECEFF1;position: relative;">
+
+
+    <ul class="list" style="position: absolute; top:50%;left:50%;transform: translate(-50%,-50%);">
+      <li>
+        <a class="fancybox" href="{$Think.const.URL}img/yum2/vSphereLogin.jpg" data-fancybox-group="gallery" title="vSphere登录"><img class="img-rounded" src="{$Think.const.URL}img/yum2/vSphereLogin.jpg" alt="" /></a>
+      </li>
+      <li>
+        <a class="fancybox" href="{$Think.const.URL}img/yum2/vSphere.jpg" data-fancybox-group="gallery" title="vSphere"><img class="img-rounded" src="{$Think.const.URL}img/yum2/vSphere.jpg" alt="" /></a>
+      </li>
+      <li>
+        <a class="fancybox" href="{$Think.const.URL}img/yum2/vCenten.jpg" data-fancybox-group="gallery" title="vCenten"><img class="img-rounded" src="{$Think.const.URL}img/yum2/vCenten.jpg" alt="" /></a>
+      </li>
+    </ul>
+      
+      
+      
+    
+
+
+  <script type="text/javascript">
+    
+
+
+    /*--------------------------------------------------*/
+      $(document).ready(function() {
+
+      /*----- plugin fancybox ------*/
+        $('.fancybox').fancybox({
+          openEffect : 'elastic',
+          openSpeed  : 150,
+          closeEffect : 'elastic',
+          closeSpeed  : 150,
+          helpers : {
+            title : {
+              type : 'over'
+            }
+          }
+        });
+        $('.fancybox-thumbs').fancybox({
+          prevEffect : 'none',
+          nextEffect : 'none',
+          closeBtn  : false,
+          arrows    : false,
+          nextClick : true,
+          helpers : {
+            thumbs : {
+              width  : 50,
+              height : 50
+            }
+          }
+        });
+
+
+       
+
+      });
+
+
+  </script>
+</body>
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>

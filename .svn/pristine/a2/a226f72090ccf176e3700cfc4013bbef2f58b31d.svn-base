@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师个人中心</title>
+	<link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+	<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+	<link rel="stylesheet" href="{$Think.const.URL}public.css">
+	<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+	<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+	<script src="{$Think.const.URL}js/public.js"></script>
+<style type="text/css">
+	body{
+	    flex-direction: rtl;
+	    background-color: #ECEFF1;
+	}
+
+	ul,
+	li {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	}
+	.title_section{
+	    width: 25vw;
+	    height: 15vh;
+	    display: flex;
+	    flex-flow: row nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    color: #F67C0A;
+	    font-size: 25px;
+	}
+	.tabs{
+		width: 100vw;
+		height: 6vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: center;
+		position: relative;
+	}
+	.tabs span{
+		/* color: #E29920; */
+		margin:0 2vw;
+		cursor: pointer;
+		border: 1px solid #E29920;
+		padding: 5px;
+		font-size: 1.5rem;
+	}
+	.tabs span:hover{
+		border: 1px solid #E29920;
+		border-radius: 8px;
+	}
+	.on{
+		margin-top: -5px;
+		border: 1px solid green;
+		color: green;
+		font-weight: bold;
+	}
+
+	.tabs a{
+		position: absolute;
+		top: -2vh;
+		color: #4CAF50;
+		font-size: 20px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	.tabs a:first-child{
+		right: 22vw;
+	}
+	.tabs a:last-child{
+		right: 10vw;
+	}
+	.tabs a:hover{
+		color: green;
+		text-decoration: underline;
+	}
+	article{
+		width: 84vw;
+		min-height: 80vh;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		border: 1px solid #F67C0A;
+		padding: 2vh 0;
+		margin: 2vh 8vw;
+	}
+
+	article .art_title{
+		width: 30vw;
+		height: 4vh;
+		margin-left: 1vw;
+		position: relative
+	}
+	.art_title h3{
+		font-size: 20px; 
+		padding-bottom: 1vh;
+		color: black;
+		font-size: 20px;
+		border-bottom: 2px solid #1250D1;
+	}
+	.art_title .form-group{
+		position: absolute;
+		top: 2.5vh;
+		left: 5vw;
+		margin-left: 5vw;
+	}
+	article .art_conten{
+		margin: 2vw;
+		width: 80vw;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+	}
+	.art_conten_item{
+		margin: 1vw 1.7vw;
+		border: 1px solid #F67C0A;
+		max-height: 150px;
+	}
+	.art_conten_item div{
+		text-align: center;
+		position: relative;
+		padding-right: 5vw;
+		border: 1px solid #F67C0A;
+		border-radius: 0 0 25px 25px;
+	}
+	.art_conten_item div i{
+		position: absolute;
+		right: 3vw;
+		top: 0.5vw;
+		color: red;
+		cursor: pointer;
+	}
+	.art_conten_item div mark{
+		background: none;
+		color: #FF2040;
+		font-size: 17px;
+		font-weight: bold;
+		margin-left: 2px;
+	}
+	.art_conten_item ul{
+
+	}
+	.art_conten_item ul input{
+		width: 2vw;
+		margin-right: 1vw;
+		color: red;
+		text-align: center;
+	}
+	.art_conten_item ul span{
+		margin-right: 1vw;
+		color: #F67C0A;
+		cursor: pointer;
+	}
+	.art_conten_item ul span:hover{
+		text-decoration: underline;
+		font-weight: bold;
+		color: green;
+	}
+</style>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		// <?php 
+		// 	if(isset($_GET['class'])&&!empty($_GET['class'])){
+		// 		echo "$('#{$class}').addClass('on').siblings('span').removeClass('on');";
+		// 	}else{
+		// 		echo 0;
+		// 	}
+		// ?>
+		
+		$('.tabs span').click(function(){
+			$(this).addClass('on').siblings('span').removeClass('on');
+			var name = $(this).attr('name');
+			$(location).prop('href',"tec-center.php?class="+name);
+		});
+		$('.art_conten_item i').click(function(){
+			var userid = $(this).attr('name');
+			if( $(this).css('color')=='rgb(0, 128, 0)' ){
+				$(this).css('color', 'red');
+				$.post('Controller/tec_centerinsert.php',{ userid:userid,s_firstgood:-1},function(data){
+				});
+			}else{
+				$(this).css('color', 'green');
+				$.post('Controller/tec_centerinsert.php',{ userid:userid,s_firstgood:1},function(data){
+				});
+			}
+		})
+		$('#search').click(function(){
+			var sear_condition=$('input[name="sear_content"]').val();
+			$(location).prop('href',"tec-center.php?search="+sear_condition);
+		});
+		$('.art_conten_item input').blur(function(){
+			var valu = $(this).val();
+			if(isNaN(valu)||(valu>100||valu<-1)){
+				alert('输出的值有误');
+				$(this).focus();
+			}
+		})
+		$('.art_conten_item li span').click(function(){
+			 $(this).prev().css('color','black');
+			var userid = $('#userid').attr('name');
+			var s_firstgrade = $(this).prev().val();
+			$.post('Controller/tec_centerinsert.php',{ userid:userid,s_firstgrade:s_firstgrade},function(data){
+			});
+		})
+	});	
+</script>
+</head>
+<body style="flex-direction: ltr; overflow-x: hidden; overflow-y:auto; ">
+	<div class="title_section">
+	    教师 —— 个人中心
+	</div>
+
+	<div class="tabs">
+		<span class="hvr-wobble-vertical on" id='网络1班' name='网络1班'>网络一班</span>
+		<span class="hvr-wobble-vertical" id='网络2班' name='网络2班'>网络二班</span>
+		<span class="hvr-wobble-vertical" id='其他' name='其他'>其他</span>
+		<div class="text-center">
+			<a href="{$Think.const.URL}stu-manage/index.php"><button class="btn btn-lg">管理学生后台</button></a>
+			<a href="{$Think.const.URL}platform-enter/stu-index.php"><button class="btn btn-lg">回到学生站点</button></a>
+		</div>
+	</div>	
+	<article>
+		<div class="art_title">
+			<h3>学生作品</h3>
+			<div class="form-group">
+				<input type="text" name='sear_content'>
+				<button id='search'>搜索</button>
+			</div>
+		</div>
+	<!-- 网络一班 -->
+	<div class='art_conten'>
+			
+					<div class='art_conten_item'><div><mark>$mark</mark><br><a href="stu-message.php?userid={ $value['s_userid']}"> </a><i id='userid' name ="{$value['s_userid']}" class='icon icon-thumbs-up icon-2x' style='color:$color'></i></div><ul>
+			        <li>
+			        	第一次作业：
+			        	<input type='text' id='first' value="" />
+			        	<span>确认</span><span>修改</span>
+			        </li>
+			        <li>
+			        	第二次作业：
+			        	<input type='text' value="" />
+						<span>确认</span><span>修改</span>
+			        </li>
+			        <li>
+			        	第三次作业：
+			        	<input type='text' value="" />
+						<span>确认</span><span>修改</span>
+			        </li>
+			        <li>
+			        	期 末 成 绩：
+			        	<input type='text' value="" />
+						<span>确认</span><span>修改</span>
+			        </li>
+			    </ul> </div>
+			<!-- 	}
+			?> -->
+			</div>
+	<!-- 网络二班 -->
+		<div class="art_conten" style="display: none;">
+			<div class="art_conten_item">
+			</div>
+		</div>
+	<!-- 其他 -->
+		<div class="art_conten" style="display: none;">
+			<div class="art_conten_item">
+			    
+	</article>
+
+
+</body>
+</html>

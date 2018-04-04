@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>服务申请</title>
+<link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+<link rel="stylesheet" href="{$Think.const.URL}public.css">
+
+<style type="text/css">
+    ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .container{
+        width: 80vw;
+        margin: 0 auto;
+        background: whitesmoke;
+    }
+    .pers_info ul{
+        box-shadow: 0 0 6px gray;
+        background: white;
+        margin-left: -15px;
+    }
+    .pers_info ul li{
+        margin:10px;
+        padding: 10px;
+    }
+    .pers_info li:first-child img{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .pers_info li:first-child div{
+        height: 100px;
+        display: table-cell;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+    .pers_info li:nth-child(2) i{
+        margin:0 10px;
+    }
+
+    .tabs{
+        margin: 10px auto;
+    }
+    .active{
+        color:#FA9143;
+    }
+    .tabs ul{
+        display: flex;
+        justify-content: space-around;
+        /* border-bottom: 1px solid gray; */
+        padding: 12px 0;
+        position: relative;
+    }
+    .tabs ul li{
+        cursor: pointer;
+        color: gray;
+        float: left;
+        font-size: 1.4rem;
+        position: relative;
+    }
+    /*
+    .tabs ul li:first-child{
+        color: #FA9143;
+    }
+    */
+    .tabs section{
+        margin-top: 15px;
+        min-height: 420px;
+        height: 85vh;
+        padding: 5px 0;
+        background: white;
+        position: relative;
+    }
+    .tabs section  i{
+        position: absolute;
+        left: 30px;
+        top: 25px;
+    }
+    .tabs section  i:hover{
+        color: green;
+        cursor: pointer;
+    }
+    .tabs section h3{
+        padding-bottom: 25px;
+    }
+    .tabs #section-0 p,#section-1 p,#section-2 p,#section-3 p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin:15px 10px 10px 10px;
+        height: 40px;
+        clear: both;
+    }
+    .tabs #section-0 p a,#section-1 p a,#section-2 p a,#section-3 p a{
+        float: left;
+        color: white;
+        margin-left: 5px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        background: #3ac984;
+        padding: 10px 45px;
+        border-radius: 40px;
+    }
+    .tabs #section-0 p a:hover,#section-1 p a:hover,#section-2 p a:hover,#section-3 p a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .tabs #section-1 p span,#section-2 p span,#section-3 p span{
+        font-size: 1.6rem;
+        margin: 20px;
+    }
+    .tabs #section-1 p span mark,#section-2 p span mark,#section-3 p span mark{
+        color: red;
+    }
+    .tabs #section-0 div,#section-1 div,#section-2 div,#section-3 div{
+        margin: 18px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        clear: both;
+    }
+
+    .tabs #section-1-c div{
+        margin: 18px;
+        font-size: 1.8rem;
+        line-height: 38px;
+    }
+    .tabs #section-3 div ul{
+        display: flex;
+        justify-content: space-around;
+        border: none;
+        margin: -20px 0;
+    }
+    .tabs #section-3 div ul li a{
+        font-size: 1.5rem;
+    }
+    
+    #section-0-b form{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #section-0-b input{
+        width: 30px;
+        margin-top: 5px;
+    }
+    #section-4 ul{
+        width: inherit;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+        border: none;
+    }
+    #section-4 li{
+        width: inherit;
+        margin:  10px;
+        border: 1px solid black;
+        font-size: 1.4rem;
+        color: black;
+        box-shadow: 0 0 10px gray;
+        letter-spacing: 4px;
+    }
+    #section-4 li div:first-child{
+        width: 48vw;
+        min-width: inherit;
+        margin: 5px 0;
+        position: relative;
+    }
+    #section-4 li div:first-child i{
+        position: absolute;
+        top: 0;
+        left: 10px;
+        padding: 0;
+    }
+    #section-4 li div:first-child span{
+        margin-left: 40px;
+    }
+    #section-4 li div:last-child{
+        margin-top: 10px;
+        text-indent: 2.8rem;
+        margin-left: 40px;
+        line-height: 25px;
+        overflow: hidden;
+    }
+    #section-4 td:nth-child(3){
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        letter-spacing: 2px;
+
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <section class="col-sm-4 pers_info">
+            <ul>
+                <li class="row">
+                    <img src="{$Think.const.URL}img/member_270x210.jpg" class="img-circle">
+                    <div>
+                        <!-- <i class="icon icon-edit"> -->
+                        <h4><strong>青青草</strong></h4>
+                        <p>QQ：815326983</p>
+                        <p>手机：13535045244</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="text-muted"><i class="icon icon-calendar"></i>加入于&nbsp;2017.9.11</p>
+                    <p class="text-muted"><i class="icon icon-edit"></i>个人描述：那你很棒棒啊棒棒啊棒棒啊棒棒啊棒棒啊棒棒啊棒棒啊棒棒啊棒棒啊</p>
+                </li>
+                <li>
+                    <a href="./pers-info.php" class="btn btn-block btn-success">
+                        <i class="icon icon-user"></i>&nbsp;&nbsp;&nbsp;修改资料
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="col-sm-8 tabs" id="tabs">
+
+            <ul>
+                <li style="color:#FA9143" class="active">
+                    <i class="icon icon-cloud"></i>  我的站点  </li>
+                <li>
+                    <i class="icon icon-cloud"></i>  OpenStack  </li>
+                <li>
+                    <i class="icon icon-cloud"></i>  vSphere  </li>
+                <li>
+                    <i class="icon icon-tasks"></i>  Svn  </li>
+                <li>
+                    <i class="icon icon-exclamation-sign"></i>  通知  </li>
+            </ul>
+            <div id="back" style="height:3px; width:80px; background: #FA9143; position: absolute; top:40px; left:50px;"></div>
+            
+                
+
+
+
+            <section id="section-0" style="display: ;">
+                <p>
+                    <a id="my-score">我的成绩</a>
+                    <a href="{$Think.const.URL}personal-enter/stu-center.php" target="_black">站点列表</a>
+                    <a href="" target="_black">进入网站</a>
+                    <a href="" target="_black">管理后台</a></p>
+                
+
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、您的站点默认是已经开通的，可直接点击“进入网站”查看！<br>
+                    2、您还可以通过“管理后台”在线修改你网站的代码！<br>
+                    3、网站底层使用的是FTP技术，你也可以使用FTP客户端登陆到您的站点！<br>
+                    <a href="">8UFTP下载</a><br>
+                    4、使用过程中若有任何问题请联系管理员：685135<br>
+
+                    </div>
+            </section>
+            <section id="section-0-b" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">我的成绩</h3>
+                <form action="" class="form-horizontal">
+                    <div class="form-group" >
+                        <label class=" control-label" for="cj1">第一次成绩：</label>
+                        <input type="text" name="cj1">
+                    </div>
+                    <div class="form-group" >
+                        <label class="control-label" for="cj1">第一次成绩：</label>
+                        <input type="text" name="cj1">
+                    </div>
+                    <div class="form-group" >
+                        <label class="control-label" for="cj1">第一次成绩：</label>
+                        <input type="text" name="cj1">
+                    </div>
+                    <div class="form-group" >
+                        <div id="appl-serv-sub-1" class="btn btn-block btn-success">提交</div></div>
+                </form>
+            </section>
+
+
+
+            <section id="section-1" style="display: none;">
+                <p>
+                    <a id="appl-serv-1" href="" target="_black">申请OpenStack</a>
+                    <a href="" target="_black">管理后台</a>
+                    <a href="">申请销毁云服务器</a></p>
+                <p>
+                    <span>申请进展：<mark>审核中。</mark><mark style="display: none;">您还未申请。</mark><mark style="display: none;">审核失败。</mark></span></p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center">序号</th>
+                                <th class="text-center">系统</th>
+                                <th class="text-center">cpu核数</th>
+                                <th class="text-center">内存</th>
+                                <th class="text-center">附加云盘</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table></div>
+
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、审核需要一定时间，请耐心等待管理员对服务器的调度！敬请留意您的邮箱或手机短信通知！<br>
+                    2、由于服务器资源有限，每位同学仅能申请一台云服务器且配置统一。若同一用户通过注册多个账号来“刷资源”，一经查到，将冻结相关账号，请理解！<br>
+                    3、使用过程中若有任何问题请联系管理员：685135。<br></div>
+            </section>
+            <section id="section-1-b" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">OpenStack服务器申请</h3>
+                <form action="" class="form-horizontal">
+                    <div class="form-group" >
+                        <label class="control-label" for="xt">操作系统:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="xt" id="sysSele">
+                                <option>Window</option>
+                                <option>Linux</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5 text-danger bg-danger">温馨提示：选择的系统已经自带系统盘</div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xt">系统类型:</label>
+                        <div class="col-sm-4" id="sysType">
+                            <select class="form-control" name="xt">
+                                <option>Server2008x64</option>
+                                <option>Server2012x64</option>
+                                <option>Windows7x86</option>
+                                <option>Windows7x64</option>
+                            </select>
+                            <select class="form-control" name="xt" style="display: none;">
+                                <option>CentOS6.8</option>
+                                <option>CentOS6.8（集成LAMP）</option>
+                                <option>CentOS7.2</option>
+                                <option>CentOS7.2（集成LAMP）</option>
+                                <option>Ubuntu14.04</option>
+                                <option>Ubuntu16.04</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5 text-danger bg-danger">温馨提示：请先选择操作系统。</div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="cpu">CPU核数:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="cpu">
+                                <option> 1 </option>
+                                <option> 2 </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="nc">内存大小:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="nc">
+                                <option> 512MB </option>
+                                <option> 1024MB </option>
+                                <option> 2048MB </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="yp">附加云盘:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="yp">
+                                <option> 10GB </option>
+                                <option> 30GB </option>
+                                <option> 50GB </option>
+                                <option> 100GB </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="yt">申请用途:</label>
+                        <div class="col-sm-9">
+                            <textarea style="resize: none;" class="form-control" name="yt"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <div id="appl-serv-sub-1" class="col-sm-offset-4 col-sm-4 btn btn-success">提交</div></div>
+                </form>
+            </section>
+            <section id="section-1-c" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">OpenStack服务器申请</h3>
+                <p class="text-center text-success" style="font-size: 1.6rem; font-weight: bold;">
+                    <span>您的申请已提交，请耐心等待管理员审核，谢谢！</span></p>
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、审核需要一定时间，请耐心等待管理员对服务器的调度！敬请留意您的邮箱或手机短信通知！<br>
+                    2、由于服务器资源有限，每位同学仅能申请一台云服务器且配置统一。若同一用户通过注册多个账号来“刷资源”，一经查到，将冻结相关账号，请理解！<br>
+                    3、使用过程中若有任何问题请联系管理员：685135。<br></div>
+            </section>
+
+
+
+            <section id="section-2" style="display: none;">
+                <p>
+                    <a id="appl-serv-2" target="_black">申请vSphere</a>
+                    <a href="" target="_black">管理后台</a>
+                    <a href="">申请销毁云服务器</a></p>
+                <p>
+                    <span>申请进展：<mark>审核中。</mark><mark style="display: none;">您还未申请。</mark><mark style="display: none;">审核失败。</mark></span></p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center">序号</th>
+                                <th class="text-center">系统</th>
+                                <th class="text-center">cpu核数</th>
+                                <th class="text-center">内存</th>
+                                <th class="text-center">附加云盘</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table></div>
+
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、审核需要一定时间，请耐心等待管理员对服务器的调度！敬请留意您的邮箱或手机短信通知！<br>
+                    2、由于服务器资源有限，每位同学仅能申请一台云服务器且配置统一。若同一用户通过注册多个账号来“刷资源”，一经查到，将冻结相关账号，请理解！<br>
+                    3、使用过程中若有任何问题请联系管理员：685135。<br></div>
+            </section>
+            <section id="section-2-b" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">vSphere服务器申请</h3>
+                <form action="" class="form-horizontal">
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xt">操作系统:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="xt">
+                                <option>linux</option>
+                                <option>window</option>
+                            </select>
+                        </div>
+                        <span class="col-sm-5">温馨提示：选择的系统已经自带系统盘</span>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="cpu">CPU核数:</label>
+                        <div class="col-sm-4">
+                            <input type="" name="cpu" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="nc">内存大小:</label>
+                        <div class="col-sm-4">
+                            <input type="" name="nc" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="yp">云端硬盘:</label>
+                        <div class="col-sm-4">
+                            <input type="" name="yp" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="yt">申请用途:</label>
+                        <div class="col-sm-9">
+                            <textarea style="resize: none;" class="form-control" name="yt"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <div id="appl-serv-sub-2" class="col-sm-offset-4 col-sm-4 btn btn-success">提交</div></div>
+                </form>
+            </section>
+            <section id="section-2-c" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">vSphere服务器申请</h3>
+                <p class="text-center text-success" style="font-size: 1.6rem; font-weight: bold;">
+                    <span>您的申请已提交，请耐心等待管理员审核，谢谢！</span></p>
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、审核需要一定时间，请耐心等待管理员对服务器的调度！敬请留意您的邮箱或手机短信通知！<br>
+                    2、由于服务器资源有限，每位同学仅能申请一台云服务器且配置统一。若同一用户通过注册多个账号来“刷资源”，一经查到，将冻结相关账号，请理解！<br>
+                    3、使用过程中若有任何问题请联系管理员：685135。<br></div>
+            </section>
+
+            <section id="section-3" style="display: none;">
+                <p>
+                    <a id="appl-serv-3" target="_black">SVN代码托管库申请</a>
+                    <a href="">申请销毁云服务器</a></p>
+                <p>
+                    <span>您团队的SVN代码库：<mark>cloud</mark><mark>您还未申请</mark></span><br>
+                    <span>使用方法：XXX（可参照平台入口的SVN平台）</span></p>
+                <div>
+                    软件下载：
+                    <ul >
+                        <li><a href="">TortoiseSVN_32bit</a></li>
+                        <li><a href="">TortoiseSVN_364bit</a></li>
+                    </ul></div>
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、同一个团队的成员只需要其中一个账号申请SVN代码库即可。<br>2、使用过程中若有任何问题请联系管理员：685135</div>
+            </section>
+            <section id="section-3-b" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">SVN代码托管库申请</h3>
+                <p class="text-center" style="font-size: 1.4rem; color: red;">注意：项目名称、成员账号一旦申请，就不可更改，只能删除！</p>
+                <form action="" class="form-horizontal">
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xt">项目名称:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control">
+                        </div>
+                        <span class="col-sm-5">仅支持英文、下划线命名</span>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xt">成员1:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control">
+                        </div>
+                        <span class="col-sm-5">仅支持英文、下划线命名</span>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xt">成员2:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control">
+                        </div>
+                        <span class="col-sm-5">仅支持英文、下划线命名</span>
+                    </div>
+                    <div class="form-group" >
+                        <label class="col-sm-2 control-label" for="xm">项目描述:</label>
+                        <div class="col-sm-9">
+                            <textarea style="resize: none;" class="form-contwsshyaErol" name="xm"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group" >
+                        <div id="appl-serv-sub-3" class="col-sm-offset-4 col-sm-4 btn btn-success">提交</div></div>
+                </form>
+            </section>
+            <section id="section-3-c" style="display: none;">
+                <i class="icon-arrow-left icon-2x"></i>
+                <h3 class="text-center">SVN代码托管库申请</h3>
+                <p class="text-center text-success" style="font-size: 1.6rem; font-weight: bold;">
+                    <span>您的代码托管项目已成功申请！</span></p>
+                <div class="text-muted">
+                    温馨提示：<br>
+                    1、同一个团队的成员只需要其中一个账号申请SVN代码库即可！<br>
+                    2、使用过程中若有任何问题请联系管理员：685135。<br></div>
+            </section>
+
+
+
+            <section id="section-4" style="display: none;">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-center"><input type="checkbox"></th>
+                            <th class="text-center">序号</th>
+                            <th class="text-center">通知内容</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td class="text-left">收到了快解放了斯柯收到了快解放了斯柯收到了快解放了斯柯解放了斯柯解放了斯柯</td>
+                            <td><button class="btn btn-primary">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>2</td>
+                            <td class="text-left">收到了快解放了斯柯达时刻到了附近</td>
+                            <td><button class="btn btn-primary">删除</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+    </div>
+
+
+<script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+<script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+<script src="{$Think.const.URL}js/public.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+    /*-----  tabs  -----*/
+        $('.tabs>ul>li').click(function(){
+            var sIndex = $(this).index();
+            $(this).css('color','#FA9143');
+            $(this).siblings('li').css('color','');
+            $('#section-'+sIndex).show();
+            $('#section-'+sIndex).siblings('section').hide();
+        });
+
+    /*-----  tabs-hover  -----*/
+        $('.tabs>ul>li').mouseenter(function(){
+            var wid = parseInt($(this).css('width'))+15+'px';
+            var left = parseInt($(this).position().left)+10+'px';
+            $('#back').stop(true,true).animate({width:wid, left:left}, "fast");
+
+
+        })
+
+    /*----- apply-service  -----*/
+        $('#my-score,#appl-serv-1,#appl-serv-2,#appl-serv-3').click(function(){
+            $(this).closest('section').fadeOut();
+            var name = $(this).closest('section').attr("id")+'-b';
+            $('#'+name).fadeIn();
+        });
+
+        $('#tabs section i').click(function(){
+            $(this).parent().fadeOut();
+            var name = $(this).parent().attr("id").substring(9,0);
+            $('#'+name).fadeIn();
+        });
+
+        $('#appl-serv-sub-1,#appl-serv-sub-2,#appl-serv-sub-3').click(function(){
+            $(this).closest('section').hide();
+            var name = $(this).closest('section').attr("id").substring(9,0)+'-c';
+            $('#'+name).show();
+        })
+
+    /*-----  system-select-type  -----*/
+        $('#sysSele').change(function() {
+            $('#sysType select').eq(0).toggle();
+            $('#sysType select').eq(1).toggle();
+        });
+
+    /*-----  section-4 text-show-hide  -----*/
+        $('#section-4 li div:last-child').click(function(){
+            $(this).toggleClass('show-text hide-text');
+        });
+
+    });
+</script>
+</body>
+
+</html>

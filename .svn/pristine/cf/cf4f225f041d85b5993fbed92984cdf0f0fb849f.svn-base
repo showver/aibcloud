@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- /.website title -->
+<title>登录</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS Files -->
+<link href="{$Think.const.URL}css/bootstrap.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/animate.min.css" rel="stylesheet">
+
+<link href="{$Think.const.URL}font/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/login.css" rel="stylesheet">
+<link href="{$Think.const.URL}public.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll">
+
+<!-- /.preloader -->
+<div id="preloader"></div>
+<div id="top"></div>
+
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax" style="background-image:url('{$Think.const.URL}img/bg.jpg'); width:100vw;  height:100vh;margin-top: -20px;display: flex; align-items: center; transform: translateY(-2%);"  data-img-width="2000" data-img-height="1333" data-diff="100">
+	
+	<!-- <div class="overlay"> -->
+		<div class="container" >
+			<div class="row" style="margin: 20vh;">
+
+				<div class="col-sm-5 contact-left wow fadeInUp">
+					<h2><span class="highlight">Get</span> in touch</h2>
+						<ul class="ul-address">
+						<li><i class="pe-7s-map-marker"></i>AIB网络工作室（教A603）</br>
+						广东农工商职业技术学院
+						</li>
+						<li><i class="pe-7s-phone"></i>Phone：685135</br>
+						QQ：991179382
+						</li>
+						<li><i class="pe-7s-mail"></i><a href="mailto:admin@aibcloud.org">admin@aibcloud.org</a></li>
+						<li><i class="pe-7s-look"></i><a href="#">www.aibcloud.org</a></li>
+						</ul>	
+							
+				</div>
+				
+				
+
+				<div class=" col-md-7" style=" border: 1px solid gray; box-shadow: 0 0 40px gray;background: rgba(0,0,0,0.5);">
+
+					<!-- Start Sign In Form -->
+					<form action="Controller/loginController.php" class="fh5co-form animate-box" data-animate-effect="fadeIn" method="POST">
+						<h2 align="center" style="margin-top: 15px">联系我们</h2>
+						<div class="form-group">
+							<input type="text" name="Name" id="Name" class="form-control wow fadeInUp" placeholder="账号" required/>
+						</div>
+						<div class="form-group">
+							<input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="邮箱" required/>
+						</div>
+						<div class="form-group" align="center">
+							<textarea name="Message"  id="Message" class="form-control input-message wow fadeInUp"  placeholder="留言内容" required></textarea>
+
+						</div>
+						<div class="form-group" align="center" style="margin-top: -30px;">
+							<input type="submit" name="submit" value="提交" class=" btn-default1 wow fadeInUp" style="width:100%;" />
+						</div>
+
+					</form>
+					<!-- END Sign In Form -->
+
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>  
+
+
+
+
+
+		<footer style="position: fixed;">
+		    <span style="margin:-5px;">Bulider：<a href="">AIB云计算小组</a></span>
+		    <span style="margin:-5px;">Copyright © 2017 <a href="">AIB云计算小组</a></span>
+		</footer>
+
+	<!-- </div>  -->
+</div>
+ 
+
+	
+	<!-- /.javascript files -->
+    <script src="{$Think.const.URL}js/jquery-2.1.3.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/login-js/custom.js"></script>
+    <script src="{$Think.const.URL}js/login-js/jquery.sticky.js"></script>
+	<script src="{$Think.const.URL}js/login-js/wow.min.js"></script>
+	<script src="{$Think.const.URL}js/login-js/owl.carousel.min.js"></script>
+	<script src="{$Think.const.URL}js/public.js"></script>
+<!-- 	<script>
+		new WOW().init();
+	</script> -->
+  </body>
+</html>

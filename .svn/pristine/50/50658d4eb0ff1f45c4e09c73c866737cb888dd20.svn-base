@@ -1,0 +1,13 @@
+.stu-c-container{
+	display: -webkit-inline-box;
+	display: inline-flex;
+	width: 50vw;
+	height: 10vh;
+	flex-direction: column;
+	background-color: lightgray;
+}
+.stu-c-item{
+	width: 50vw;
+	height: 40vh;
+	background-color: cornflowerblue;
+}

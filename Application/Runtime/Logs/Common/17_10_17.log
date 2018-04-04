@@ -1,0 +1,12 @@
+[ 2017-10-17T16:43:45+08:00 ] ::1 /cloud/index.php/platform/platform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Platform
+
+[ 2017-10-17T16:44:00+08:00 ] ::1 /cloud/index.php/platform/platform
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 无法加载模块:Platform
+

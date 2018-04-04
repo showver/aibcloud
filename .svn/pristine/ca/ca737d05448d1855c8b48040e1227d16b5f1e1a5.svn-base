@@ -1,0 +1,16 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class StuController extends Controller {
+	public function index(){
+		$this->display();
+	}
+
+	public function center£¨£©{
+		$this->display();
+	}
+
+	public function message(){
+		$this->display();
+	}
+}

@@ -1,0 +1,41 @@
+﻿<?php
+
+
+$conn = mysqli_connect('localhost','root','root') or die("数据库连接错误".mysqli_error() );
+mysqli_select_db($conn,"cloud") or die("数据库访问错误".mysqli_error());
+mysqli_query($conn,"set names utf8");
+
+function getOne($conn,$sql){
+	$query = mysqli_query($conn,$sql);
+	if($query){
+		$row = mysqli_fetch_assoc($query);
+		return $row;
+	}else {
+		return false;
+	}
+}
+
+function getAll($conn,$sql){
+	$query = mysqli_query($conn,$sql);
+	if($query){
+		$rows = array();
+		while($res = mysqli_fetch_assoc($query)){
+			$rows[] = $res;
+		}
+		return $rows;
+	}else{
+		return false;
+	}
+
+}
+
+function totalRows($conn,$sql){
+	$res = mysqli_query($conn,$sql);
+	if($res){
+		return mysqli_num_rows($res);
+	}else{
+		return false;
+	}
+}
+
+?>

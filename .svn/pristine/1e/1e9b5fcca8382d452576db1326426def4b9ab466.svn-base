@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<!-- /.website title -->
+<title>注册</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS Files -->
+<link href="{$Think.const.URL}css/bootstrap.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/animate.min.css" rel="stylesheet">
+<link href="{$Think.const.URL}css/login.css" rel="stylesheet">
+<link href="{$Think.const.URL}public.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
+</head>
+  
+<body data-spy="scroll" style="height:100vh;" data-target="#navbar-scroll">
+
+<!-- /.preloader -->
+<div id="preloader"></div>
+<div id="top"></div>
+<?php include "public/header.php" ?>
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax" style="background-image:url('{$Think.const.URL}img/bg.jpg');margin-top: -20px; width:100vw; height:100vh;display: flex; align-items: center; transform: translateY(-2%);" data-img-width="2000" data-img-height="1333" data-diff="100">
+	
+	<!-- <div class="overlay"> -->
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-7">
+				
+					<!-- /.logo -->
+					<div class="logo wow fadeInDown"> <a href=""><img src="{$Think.const.URL}img/logo2.png" alt="logo"></a></div>
+
+					<!-- /.main title -->
+						<h1 class="wow fadeInLeft">
+						Beautiful High Converting Landing Page
+						</h1>
+
+					<!-- /.header paragraph -->
+					<div class="landing-text wow fadeInUp">
+						<p>Backyard is a modern and customizable landing page template designed to increase conversion of your product. Backyard is flexible to suit any kind of your business. Try now and join with our happy customers!</p>
+					</div>				  
+
+					<!-- /.header button -->
+					<div class="head-btn wow fadeInLeft">
+						<a href="#feature" class="btn-primary">Features</a>
+						<a href="#download" class="btn-default">Download</a>
+					</div>
+	
+		  
+
+				</div> 
+				
+				
+
+				<div class="col-md-offset-1 col-md-3" style="  margin-top: 40px; border: 1px solid gray; box-shadow: 0 0 40px white;background: rgba(0,0,0,0.5);">
+						
+
+					<!-- Start Sign In Form -->
+					<form action="#" class="fh5co-form animate-box" id="form-reg" data-animate-effect="fadeIn">
+						<h2 class="text-center" style="margin-top: 15px">注册</h2>
+						<div class="form-group wow fadeInUp" style="display: none;">
+							<div class="alert alert-success" role="alert">注册成功</div>
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="xm" class="sr-only">姓名</label>
+							<input type="text" class="form-control" name="xm" placeholder="姓名" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="yx" class="sr-only">邮箱</label>
+							<input type="email" class="form-control" name="yx" placeholder="邮箱" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="mm" class="sr-only">密码</label>
+							<input type="password" class="form-control" name="mm" placeholder="密码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="rmm" class="sr-only">再次输入密码</label>
+							<input type="password" class="form-control" name="rmm" placeholder="再次输入密码" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="qq" class="sr-only">QQ</label>
+							<input type="text" class="form-control" name="qq" placeholder="QQ" autocomplete="off">
+						</div>
+						<div class="form-group wow fadeInUp">
+							<label for="hm" class="sr-only">手机号码</label>
+							<input type="password" class="form-control" name="hm" placeholder="手机号码" autocomplete="off">
+						</div>
+						<div class="form-group text-center wow fadeInUp">
+							<p>已经注册？？ <a href="login.php">登录</a></p>
+						</div>
+						<div class="form-group text-center wow fadeInUp" style="margin-top: -50px;">
+							<input type="submit" value="注册" class=" btn-default1 wow fadeInUp" style="width:100%; ">
+						</div>
+					</form>
+					<!-- END Sign In Form -->
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div> 
+	<!-- </div>  -->
+</div>
+ 
+<?php include "public/footer.php" ?>
+	
+	<!-- /.javascript files -->
+    <script src="{$Think.const.URL}js/jquery-2.1.3.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/login-js/custom.js"></script>
+    <script src="{$Think.const.URL}js/login-js/jquery.sticky.js"></script>
+	<script src="{$Think.const.URL}js/login-js/wow.min.js"></script>
+	<script src="{$Think.const.URL}js/login-js/owl.carousel.min.js"></script>
+	<script src="{$Think.const.URL}public.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+  </body>
+</html>

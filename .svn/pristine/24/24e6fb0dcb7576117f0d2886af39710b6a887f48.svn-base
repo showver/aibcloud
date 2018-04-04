@@ -1,0 +1,250 @@
+<?php if (!defined('THINK_PATH')) exit();?><nav class="navbar navbar-default my-nav" role="navigation">
+  <div class="container-fluid">
+  <div class="navbar-header nav-header col-md-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a href="/cloud/index.php" style="cursor: pointer;">
+        <img src="<?php echo (URL); ?>img/logo.png"  alt="AIB-云平台">
+      </a>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="collapse navbar-collapse nav-content col-md-9" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+          <li><a href="/cloud/index.php">首页</a></li>
+          <li class="dropdown" id="hoverdown-1">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" >
+                  云计算小组 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  AIB云平台 <b class="caret"></b>
+              </a>
+          </li>
+          <li class="dropdown" id="hoverdown-3">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  服务与支持 <b class="caret"></b>
+              </a>
+          </li>
+          <li><a href="deve-prog.php">开发历程</a></li>
+          <li><a href="login/touch-us.php">联系我们</a></li>
+          <li>
+            <div class="input-group" style="cursor: pointer;margin:10px 20px; width:12vw;">
+                <input type="text" class="form-control" style="height:25px;">
+                <span class="input-group-addon" style="height:25px; font-size: 8px; padding:0 8px;">搜索</span>
+            </div>
+          </li>
+      
+      <li><a href="login/login.php" class="login">登陆</a></li>
+                    <li><a href="login/register.php" class="login">注册</a></li>
+      
+ 
+            <li class="dropdown" style="width:80px;">
+                    <div  class="dropdown-toggle" data-toggle="dropdown">
+                       <img src="'.$headshot.'" class="img-circle" style="width:36px; height:36px;  margin: 5px 10px; cursor: pointer;">
+                    </div>
+                   <ul class="dropdown-menu">
+                       <li><a href="'.$person_center.'" class="login">个人中心</a></li>
+                       <li><a href="personal-enter/pers-info.php" class="login">修改资料</a></li>
+                       <li><a href="public/over.php" class="login" id="over">退出</a></li>
+                   </ul>
+                </li>
+  
+
+      </ul>
+      <div class="back" style="height: 3px; background-color: #0CF;  position: absolute; bottom: 2px; left:15px; width:65px;"></div>
+  </div>
+
+  </div>
+
+
+
+  <section id="showdown-1">
+    <ul>
+      <li class="lead">小组介绍</li>
+      <li><a href="/cloud/index.php/Admin/team/teamInfo">团队介绍</a></li>
+      <li><a href="/cloud/index.php/Admin/team/joinus">加入我们</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">团队Team</li>
+      <li><a href="/cloud/index.php/Admin/team/team">指导老师</a></li>
+      <li><a href="/cloud/index.php/Admin/team/team">小组成员</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-2">
+    <ul>
+      <a href="/cloud/index.php/Admin/platform/platform">
+        <li class="lead">平台入口</li>
+      </a>
+      <li><a href="/cloud/index.php/admin/openstack/openstack">OpenStack</a></li>
+      <li><a href="/cloud/index.php/admin/vsphere/vsphere">vSphere</a></li>
+      <li><a href="/cloud/index.php/admin/Docker/docker">Docker</a></li>
+      <li><a href="/cloud/index.php/admin/mirrors/mirrors">CentOS</a></li>
+      <li><a href="/cloud/index.php/admin/SVN/subversion">SVN</a></li>
+      <li><a href="/cloud/index.php/admin/lanDisk/onlineDisk">内网云盘</a></li>
+      <li><a href="/cloud/index.php/admin/Mail/mail">邮件系统</a></li>
+      <li><a href="/cloud/index.php/admin/stu/stuIndex">学生站点</a></li>
+      <li>微信小程序</li>
+    </ul>
+
+    <ul>
+      <li class="lead">平台架构</li>
+      <li><a href="/cloud/index.php/Admin/platform/platformFrame">底层硬件架构</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-3">
+    <ul>
+      <li class="lead">用户服务</li>
+      <li><a href="cloud-team/tips.php">服务公告</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">帮助中心</li>
+      <li><a href="help.php">文档</a></li>
+    </ul>
+  </section>
+
+</nav>
+
+<style type="text/css">
+  nav section{
+    position: absolute;top:53px;min-width:200px;min-height: 200px;transform:translateX(-50%);left:50%;display: flex;justify-content: center;color: white;background: rgba(0, 0, 0, 0.8);font-size: 1.5rem;padding:20px;visibility: hidden;
+  }
+  nav section ul{
+    float: left;width:150px;margin-left:7vw; padding:0;color: rgba(255,255,255,0.6);
+  }
+  nav section ul:last-child{
+    margin-right: 7vw;
+  }
+  nav section ul .lead{
+    font-size: 1.5rem !important;margin:0 !important;font-weight: bold; border-bottom:1px solid rgba(255,255,255,0.6);color: white;padding-bottom: 5px;
+  }
+  nav section ul a .lead:hover{
+    color: red;
+    cursor: pointer;
+  }
+  nav section ul a{
+    color: rgba(255,255,255,0.6);
+  }
+  nav section ul a:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav section ul li{
+    margin: 0;
+    padding-top: 3px;
+    list-style: none;
+  }
+  nav section ul li:nth-child(2){
+    margin-top: 5px;
+  }
+</style>
+
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AIB网络工作室 - 云平台 - 镜像站</title>
+    <link rel="stylesheet" href="<?php echo (URL); ?>css/platform-enter.css">
+    <link rel="stylesheet" href="<?php echo (URL); ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo (URL); ?>public.css">
+    <script src="<?php echo (URL); ?>js/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo (URL); ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo (URL); ?>js/public.js"></script>
+    <link rel="stylesheet" href="<?php echo (URL); ?>css/font-awesome.min.css">
+
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+
+    <div id="wrapper" >
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">AIB网络工作室 - 云平台 - 镜像站</h2>
+            <a href="http://aibcloud.org/" title="一个开源的镜像站点">An Open Source Mirror Site</a>
+        </div>
+
+<!-- <div id="navbar" style=" margin:5px auto;margin-bottom:10px;background: #CCFFFF;height:50px;">
+    <ul>
+        <li><a href="http://aibcloud.org/">主页</a></li>
+        <li><a href="">关于</a></li>
+    </ul>
+</div> -->
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>镜像文件列表</h2>
+
+                <table class="file-table">
+                    <thead  align="center">
+                    <tr>
+                        <th>镜像</th>
+                        <th class="text-center">最后更新时间</th>
+                        <th class="text-center">repo文件下载</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+    				<tr><td><a href="">CentOS-6</a></td><td align="center">2017-08-11 15:40:15</td><td align="center"><a href="">repo</a></td></tr>
+    				<tr><td><a href="">CentOS-6-epel</a></td><td align="center">2017-08-11 05:05:58</td><td align="center"><a href="">repo</a></td></tr>
+    				<tr><td><a href="">CentOS-7</a></td><td align="center">2017-08-11 03:17:41</td><td align="center"><a href="">repo</a></td></tr>
+    				<tr><td><a href="">CentOS-7-epel</a></td><td align="center">2017-08-11 02:26:14</td><td align="center"><a href="">repo</a></td></tr>
+    				<tr><td><a href="">Ceph</a></td><td align="center">2017-08-11 01:50:00</td><td align="center"><a href="">repo</a></td></tr>
+    				<tr><td><a href="">OpenStack-N</a></td><td align="center">2017-08-11 16:54:00</td><td align="center"><a href="">repo</a></td></tr>
+                    </tbody>
+                </table>
+
+                </div>
+                <div id="siderbar">
+            <h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>镜像配置教程</h4>
+        	<p>
+        	在左边的“repo文件下载”栏目上，根据需要下载相应的repo文件，然后使用xshell，配合xftp，
+        	将对应的repo文件上传到Linux的/etc/yum.repos.d/目录下，最后使用命令：<br />
+        	yum clean all<br />
+        	yum makecache<br />
+        	更新yum源缓存，没报错则证明yum源配置成功。<br />
+        	提示：将repo文件上传到Linux目录时请先清空原有的repo（慎删！），命令：<br />
+        	rm -rf * /etc/yum.repos.d/
+        	</p>
+        	<p></p>
+            <h4 style="font-weight: normal;" class="mirror-help-tips"><i class="icon-bell icon-large" style="margin:0 10px 0 0; color: black;"></i>友情提示</h4>
+
+            <p>
+                使用AIB - 镜像站，可以节省大量外网带宽，提高软件安装效率。
+        		如果您需要下载Linux发行版的ISO镜像，请到内网云盘下载。
+           </p>
+            <h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+            <ul>
+                <li><a href="www.miecu.net">觅库</a></li>
+         	    <li><a href="www.gdaib.edu.cn">GDAIB</a></li>
+            </ul>
+
+
+        <br>
+        <br>
+
+        </div>
+
+        </div>
+            <div class="clear"></div>
+            <div id="footer">
+                <div class="about">
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+<footer style="position: relative;">
+    <span>Builder：<a href="">AIB云计算小组</a></span>
+    <span>Copyright © 2017 <a href="">AIB云计算小组</a></span>
+</footer>

@@ -1,0 +1,24 @@
+[ 2017-09-15T21:32:11+08:00 ] ::1 /cloud/index.php/public/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+ERR: 无法加载控制器:Upload
+
+[ 2017-09-15T21:32:16+08:00 ] ::1 /cloud/index.php/public/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载控制器:Upload
+
+[ 2017-09-15T21:33:05+08:00 ] ::1 /cloud/index.php/public/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+ERR: 无法加载控制器:Upload
+
+[ 2017-09-15T21:33:10+08:00 ] ::1 /cloud/index.php/public/upload.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载控制器:Upload
+

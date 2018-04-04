@@ -1,0 +1,536 @@
+<?php if (!defined('THINK_PATH')) exit();?><nav class="navbar navbar-default my-nav" role="navigation" style="z-index: 999;">
+    <div class="container-fluid">
+    <div class="navbar-header nav-header col-md-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a href="/cloud/index.php" style="cursor: pointer;">
+        <img src="<?php echo (URL); ?>img/logo.png"  alt="网络工作室云平台">
+      </a>
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="collapse navbar-collapse nav-content col-md-9" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/cloud/index.php">首页</a></li>
+          <li class="dropdown" id="hoverdown-1">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  云计算小组 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu hidden-md hidden-lg">
+                  <li>小组介绍</li>
+                  <li class="text-muted"><a href="/cloud/index.php/Home/team/teamInfo">团队介绍</a></li>
+                  <li><a href="/cloud/index.php/Home/team/joinus">加入我们</a></li>
+                  <li>团队Team</li>
+                  <li><a href="/cloud/index.php/Home/team/team">指导老师</a></li>
+                  <li><a href="/cloud/index.php/Home/team/team">小组成员</a></li>
+              </ul>
+          </li>
+          <li class="dropdown" id="hoverdown-2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  云平台 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu hidden-md hidden-lg">
+                  <a href="/cloud/index.php/Home/platform/platform">
+                    <li>平台入口</li>
+                  </a>
+                  <li><a href="/cloud/index.php/admin/openstack/openstack">OpenStack</a></li>
+                  <li><a href="/cloud/index.php/admin/vsphere/vsphere">vSphere</a></li>
+                  <li><a href="/cloud/index.php/admin/Docker/docker">Docker</a></li>
+                  <li><a href="/cloud/index.php/admin/mirrors/mirrors">CentOS</a></li>
+                  <li><a href="/cloud/index.php/admin/SVN/subversion">SVN</a></li>
+                  <li><a href="/cloud/index.php/admin/lanDisk/onlineDisk">内网云盘</a></li>
+                  <li><a href="/cloud/index.php/admin/Mail/mail">邮件系统</a></li>
+                  <li><a href="/cloud/index.php/admin/stu/stuIndex">学生站点</a></li>
+                  <li><span>微信小程序</span></li> 
+              </ul>
+              <ul class="dropdown-menu hidden-md hidden-lg">
+                <li>平台架构</li>
+                <li><a href="/cloud/index.php/Home/platform/platformFrame">底层硬件架构</a></li>
+              </ul>
+          </li>
+          <li class="dropdown" id="hoverdown-3">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  服务与支持 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu hidden-md hidden-lg">
+                <li>用户服务</li>
+                <li><a href="/cloud/index.php/Admin/ServerHelp/notice">服务公告</a></li>
+              </ul>
+              <ul class="dropdown-menu hidden-md hidden-lg">
+                <li>帮助中心</li>
+                <li><a href="/cloud/index.php/Admin/ServerHelp/document">文档</a></li>
+              </ul>
+          </li>
+          <li class="hidden-xs hidden-sm"><a href="/cloud/index.php/admin/develop/deveProg">开发历程</a></li>
+          <li><a href="/cloud/index.php/admin/TouchUs/touchUs">联系我们</a></li>
+          <li class="hidden-xs hidden-sm">
+            <div class="input-group" style="cursor: pointer;margin:10px 20px; width:12vw;">
+                <input type="text" class="form-control" style="height:25px;">
+                <span class="input-group-addon" style="height:25px; font-size: 8px; padding:0 8px;">搜索</span>
+            </div>
+          </li>
+   <?php if(empty($_SESSION['username'])): ?><li><a href="/cloud/index.php/admin/login/login" class="login">登陆</a></li>
+        <li><a href="/cloud/index.php/admin/login/register" class="login">注册</a></li>
+     
+ <?php else: ?>
+            <li class="dropdown" style="width:80px;">
+                    <div  class="dropdown-toggle" data-toggle="dropdown">
+                       <img  src="<?php echo file_exists(iconv('UTF-8','GB2312',"./application/admin/public/uploadImg/".$_SESSION['username'].".png"))?"/cloud/application/admin/public/uploadImg/".$_SESSION['username'].".png":'/cloud/application/admin/public/uploadImg/0.png'; ?>" class="img-circle">
+                    </div>
+          <?php if($_SESSION['level']==2 or $_SESSION['level']==3): ?><ul class="dropdown-menu">
+                       <li><a href="/cloud/index.php/admin/stu/servAppl" class="login">个人中心</a></li>
+                       <li><a href="/cloud/index.php/home/stu/stuMessage" class="login">个人网站</a></li>
+                       <li><a href="/cloud/index.php/admin/stu/persInfo" class="login">修改资料</a></li>
+                       <li><a href="/cloud/index.php/admin/login/end" class="login" id="over">退出</a></li>
+                   </ul>
+          <?php elseif($_SESSION['level']==1): ?>
+                     <ul class="dropdown-menu">
+                       <li><a href="/cloud/index.php/admin/tea/teaCenter" class="login">作业评分</a></li>
+                       <li><a href="/cloud/index.php/admin/stu/servAppl" class="login">个人中心</a></li>
+                       <li><a href="/cloud/index.php/admin/stu/persInfo" class="login">修改资料</a></li>
+                       <li><a href="/cloud/index.php/admin/login/end" class="login" id="over">退出</a></li>
+                   </ul>
+          <?php elseif($_SESSION['level']==0): ?>
+                      <ul class="dropdown-menu">
+                           <li><a href="/cloud/index.php/admin/admin/index" class="login" id="over">后台管理</a></li>
+                           <li><a href="/cloud/index.php/admin/login/end" class="login" id="over">退出</a></li>
+                      </ul><?php endif; ?>
+                </li><?php endif; ?>
+
+      </ul>
+
+      <div class="back hidden-xs hidden-sm" style="width:65px; height:3px; background-color: #0CF;  position: absolute; bottom: 0; left:15px; "></div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <section id="showdown-1" class="hidden-xs hidden-sm">
+    <ul>
+      <li class="lead">小组介绍</li>
+      <li><a href="/cloud/index.php/Home/team/teamInfo">团队介绍</a></li>
+      <li><a href="/cloud/index.php/Home/team/joinus">加入我们</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">团队Team</li>
+      <li><a href="/cloud/index.php/Home/team/team">指导老师</a></li>
+      <li><a href="/cloud/index.php/Home/team/team">小组成员</a></li>
+    </ul>
+  </section>
+  
+  <section id="showdown-2" class="hidden-xs hidden-sm">
+    <ul>
+      <a href="/cloud/index.php/Home/platform/platform">
+        <li class="lead">平台入口</li>
+      </a>
+      <li><a href="/cloud/index.php/admin/openstack/openstack">OpenStack</a></li>
+      <li><a href="/cloud/index.php/admin/vsphere/vsphere">vSphere</a></li>
+      <li><a href="/cloud/index.php/admin/Docker/docker">Docker</a></li>
+      <li><a href="/cloud/index.php/admin/mirrors/mirrors">CentOS</a></li>
+      <li><a href="/cloud/index.php/admin/SVN/subversion">SVN</a></li>
+      <li><a href="/cloud/index.php/admin/lanDisk/onlineDisk">内网云盘</a></li>
+      <li><a href="/cloud/index.php/admin/Mail/mail">邮件系统</a></li>
+      <li><a href="/cloud/index.php/home/stu/stuIndex">学生站点</a></li>
+      <li>微信小程序</li>
+    </ul>
+
+    <ul>
+      <li class="lead">平台架构</li>
+      <li><a href="/cloud/index.php/Home/platform/platformFrame">底层硬件架构</a></li>
+    </ul>
+  </section>
+
+  <section id="showdown-3" class="hidden-xs hidden-sm">
+    <ul>
+      <li class="lead">用户服务</li>
+      <li><a href="/cloud/index.php/Admin/ServerHelp/notice">服务公告</a></li>
+    </ul>
+
+    <ul>
+      <li class="lead">帮助中心</li>
+      <li><a href="/cloud/index.php/Admin/ServerHelp/document">文档</a></li>
+    </ul>
+  </section>
+
+
+</nav>
+
+
+
+
+<style type="text/css">
+  
+
+  nav section{
+    position: absolute;top:50px;min-width:200px;min-height: 200px;transform:translateX(-50%);left:50%;display: flex;justify-content: center;color: white;background: rgba(0, 0, 0, 0.8);font-size: 1.5rem;padding:20px;visibility: hidden;
+  }
+  nav section ul{
+    float: left;width:150px;margin-left:7vw; padding:0;color: rgba(255,255,255,0.6);
+  }
+  nav section ul:last-child{
+    margin-right: 7vw;
+  }
+  nav section ul .lead{
+    font-size: 1.5rem !important;margin:0 !important;font-weight: bold; border-bottom:1px solid rgba(255,255,255,0.6);color: white;padding-bottom: 5px;
+  }
+  nav section ul a .lead:hover{
+    color: red;
+    cursor: pointer;
+  }
+  nav section ul a{
+    color: rgba(255,255,255,0.6);
+  }
+  nav section ul a:hover{
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav section ul li{
+    margin: 0;
+    padding-top: px;
+    list-style: none;
+  }
+  nav section ul li:nth-child(2){
+    margin-top: 5px;
+  }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>网络工作室云平台</title>
+    <link rel="stylesheet" href="<?php echo (URL); ?>css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="<?php echo (URL); ?>public.css">
+
+    <style type="text/css">
+
+       /*  body{
+           background: url('<?php echo (URL); ?>img/homebg.jpg') fixed;
+           background-size: cover;
+           overflow-x: hidden;
+       } */
+        body{
+            background: url('<?php echo (URL); ?>img/homebg.jpg') fixed;
+            background-size: cover;
+            overflow-x: hidden;
+            height: 90vh;
+        }
+        #f {
+            background: grey;
+            display: -webkit-box;
+            display: -ms-flexbox;
+
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100vw;
+            height: 87.5vh;
+            /* min-height: 800px; */
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        #f h1 {
+            color: rgba(255, 255, 255, 1);
+            font-size: 7rem;
+            font-weight: bolder;
+        }
+
+        #f h2 {
+            color: rgba(255, 255, 255, 1);
+            font-size: 4rem;
+            padding: 5px;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+        }
+
+        #f article {
+            width: 60vw;
+            height: 30vh;
+            overflow-y: auto;
+        }
+
+        #f article p {
+            text-indent: 3.6rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        #f article::-webkit-scrollbar {
+            width: 3px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #f article::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        #f div a {
+            display: block;
+            width: 12vw;
+            height: 40px;
+            float: left;
+            background: black;
+            margin: 0 0.8vw;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 8vh;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        #s {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            z-index: 0;
+            opacity: 0;
+            width: 100vw;
+            height: 87.5vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+
+        }
+
+        #s img {
+            width: 30vw;
+            height: 60vh;
+            margin: 2vw;
+        }
+
+        #s article {
+            width: 40vw;
+            height: 60vh;
+            color: white;
+            overflow-y: auto;
+        }
+
+        #s article h2 {
+            padding-left: 2rem;
+            border-left: 1rem solid orange;
+            font-size: 2rem;
+        }
+
+        #s article p {
+            text-indent: 2rem;
+            cursor: default;
+        }
+
+        #s article a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            background: orange;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 1px 3px 3px black;
+            margin: 10px;
+        }
+
+        #s article::-webkit-scrollbar {
+            width: 3px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #s article::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        #t {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100vw;
+            height: 87.5vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+        }
+        #t img {
+            width: 30vw;
+            height: 60vh;
+            margin: 2vw;
+        }
+
+        #t article {
+            width: 40vw;
+            height: 60vh;
+            color: white;
+            overflow-y: auto;
+        }
+
+        #t article h2 {
+            padding-left: 2rem;
+            border-left: 1rem solid orange;
+            font-size: 2rem;
+        }
+
+        #t article p {
+            text-indent: 2rem;
+            cursor: default;
+        }
+
+        #t article a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            background: orange;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 1px 3px 3px black;
+            margin: 10px;
+        }
+
+        #t article::-webkit-scrollbar {
+            width: 3px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #t article::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        #left {
+            width: 50px;
+            height: 30px;
+            position: fixed;
+            top: 50vh;
+            left: 0;
+            z-index: 20;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+        #left:hover{
+            background: rgba(255, 255, 255, 0.5);
+        }
+        #right {
+            width: 50px;
+            height: 30px;
+            position: fixed;
+            top: 50vh;
+            right: 0;
+            z-index: 20;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        #right:hover{
+            background: rgba(255, 255, 255, 0.5);
+        }
+        @media only screen and (max-width: 768px){
+            #f h1{
+                font-size: 3rem;
+            }
+            #f h2{
+                font-size: 2rem;
+            }
+            #f article p{
+                text-indent: 2rem;
+                font-size: 1rem;
+            }
+
+        }
+        @media only screen and (min-height:1000px){
+            #s, #t, #f{
+                height: 92vh;
+                top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="f" class='main' >
+        <h1>网络工作室云平台</h1>
+        <h2>什么是云计算?</h2>
+        <article>
+            <p>通俗的理解，“把所有的本地的事，都可以放到云端来完成就是云计算了。”</p>
+            <p>再通俗具体点，就是：未来的电脑将不需要主机，只需要一个显示器。原来机箱里的东西哪去了?它们将全部存储在“云计算”中，而这个 “云计算”就是一台超级计算机或是很多超级计算机的集合,当你要使用的时候，你只要给它点小费，他们即可同时为你工作服务。
+            </p>
+            <p>一些游戏玩家渴望追求带劲的显卡、CPU，未来这些统统不需要，你只需要一套键盘鼠标 和显示器，就能实现“发烧友”的愿望，而这背后的支撑者，就是“云计算”。
+            </p>
+        </article>
+
+    </div>
+    <div id="s" class='main'>
+        <a href="/cloud/index.php/Home/team/joinus"><img src="<?php echo (URL); ?>img/joinus.png" style="width: 70vw;  margin-left: 8vw;"></a>
+    </div>
+    <div id="t" class='main'>
+        <a href="contact/index.php"><img src="<?php echo (URL); ?>img/shenqing.png" style="width: 40vw; margin-left: 8vw;"></a>
+    </div>
+
+    <img src="<?php echo (URL); ?>img/arrow.png" alt="" id="left">
+    <img src="<?php echo (URL); ?>img/arrow.png" alt="" id="right">
+
+
+    <script src="<?php echo (URL); ?>js/jquery-3.2.1.min.js"></script>
+    <script src="<?php echo (URL); ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo (URL); ?>js/index.js"></script>
+    <script src="<?php echo (URL); ?>js/public.js"></script>
+</body>
+
+</html>
+<script>
+$(function(){
+    document.children[0].children[1].firstChild.parentNode.removeChild(document.children[0].children[1].firstChild);
+})
+</script>
+
+<footer style="position: fixed; z-index: 999;" id="foot">
+    <span>Builder：<a href="">AIB云计算小组</a></span>
+    <span>Copyright © 2017 <a href="">AIB云计算小组</a></span>
+</footer>

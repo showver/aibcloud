@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.main_z_b').click(function(){
+        $('#db').css('visibility','visible');
+        $('#pl').css('visibility','visible');
+    })
+    $('#db').click(function(){
+        $('#db').css('visibility','hidden');
+        $('#pl').css('visibility','hidden');
+    })
+})

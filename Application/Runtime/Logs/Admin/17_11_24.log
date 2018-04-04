@@ -1,0 +1,441 @@
+[ 2017-11-24T10:55:37+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-11-24T10:55:40+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0070s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='寂寞沙洲冷' or stu_number='寂寞沙洲冷') and password='zhaozi' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T10:55:57+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='20165528125' or stu_number='20165528125') and password='123456' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-24T10:55:59+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_db` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`stu_number`,`level`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score`,`name` FROM `cl_score` WHERE ( to_id=284 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_db` WHERE ( db_user='20165528125' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-24T10:56:03+08:00 ] ::1 /cloud/index.php/Admin/Stu/persInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0040s ]
+SQL: SELECT `netname`,`netdescribt`,`stu_number`,`phnumber`,`qq`,`perdescribt`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T14:53:23+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T14:53:30+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0040s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='admin' or stu_number='admin') and password='0.123' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-24T14:53:31+08:00 ] ::1 /cloud/index.php/Admin/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_touchus` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_document` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_develop` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_notice` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_openstack` ORDER BY oid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_openstack` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( del_state!='' ) ORDER BY oid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_vsphere` ORDER BY vid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_vsphere` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( del_state!='' ) ORDER BY vid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` ORDER BY sid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_svn` WHERE ( del_state!='' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( del_state!='' ) ORDER BY sid LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_develop` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_develop` ORDER BY did LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_notice` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_notice` ORDER BY nid LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_document` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_document` ORDER BY did LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_touchus` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_touchus` ORDER BY tid LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-11-24T14:53:38+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T14:53:48+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0050s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='20165528125' or stu_number='20165528125') and password='123456' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-24T14:53:49+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_db` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`stu_number`,`level`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score`,`name` FROM `cl_score` WHERE ( to_id=284 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_db` WHERE ( db_user='20165528125' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T14:55:17+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_db` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`stu_number`,`level`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score`,`name` FROM `cl_score` WHERE ( to_id=284 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_db` WHERE ( db_user='20165528125' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-11-24T21:38:54+08:00 ] ::1 /cloud/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T21:39:02+08:00 ] ::1 /cloud/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`stu_number`,`email`,`qq`,`level`,`password` FROM `cl_user` WHERE ( (username='20165528125' or stu_number='20165528125') and password='123456' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-24T21:39:03+08:00 ] ::1 /cloud/index.php/Admin/Stu/servAppl.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_db` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`stu_number`,`level`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score`,`name` FROM `cl_score` WHERE ( to_id=284 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_db` WHERE ( db_user='20165528125' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T21:39:06+08:00 ] ::1 /cloud/index.php/admin/stu/servAppl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_vsphere` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_openstack` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cl_svn` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cl_db` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_score` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phnumber`,`qq`,`perdescribt`,`stu_number`,`level`,`cre_time` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `one_score`,`two_score`,`three_score`,`term_score`,`name` FROM `cl_score` WHERE ( to_id=284 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_vsphere` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_openstack` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_svn` WHERE ( applicant='马锦涛' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cl_db` WHERE ( db_user='20165528125' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T21:39:08+08:00 ] ::1 /cloud/index.php/admin/stu/stuMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cl_reply` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: flag D:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 75 行.
+SQL: SELECT `id`,`username`,`netname`,`stu_number`,`netdescribt` FROM `cl_user` WHERE ( username='马锦涛' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cl_comment` WHERE ( comment_to=284 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-11-24T21:39:11+08:00 ] ::1 /cloud/index.php/Admin/Stu/stuIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cl_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cl_comment` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( excellent=1 )  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=261 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=262 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=312 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=313 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=314 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=260 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: flag D:\phpStudy\WWW\cloud\Application\Admin\Controller\StuController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_user` WHERE ( class='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username`,`netname`,`view` FROM `cl_user` WHERE ( class='1' ) ORDER BY id LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=260 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=261 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=262 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=263 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=264 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=265 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=266 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=267 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=268 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=269 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=270 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cl_comment` WHERE ( comment_to=271 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

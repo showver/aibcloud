@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AIB网络工作室 - 云平台 - Docker镜像仓库</title>
+    <link rel="stylesheet" href="{$Think.const.URL}css/platform-enter.css">
+    <link rel="stylesheet" href="{$Think.const.URL}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{$Think.const.URL}public.css">
+    <script src="{$Think.const.URL}js/jquery-3.2.1.min.js"></script>
+    <script src="{$Think.const.URL}js/bootstrap.min.js"></script>
+    <script src="{$Think.const.URL}js/public.js"></script>
+    <link rel="stylesheet" href="{$Think.const.URL}css/font-awesome.min.css">
+    <style type="text/css">
+        #siderbar p a{
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            background: #3ac984;
+            padding: 10px 60px;
+            border-radius: 40px;
+            margin-top: 2vw;
+        }
+        #siderbar p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body style="color: black; overflow-x: hidden;">
+
+    <div id="wrapper" >
+        <div id="header" style=" height:80px;">
+            <h2 style="font-size: 25px;">AIB网络工作室 - 云平台 - <b>SubVersion</b></h2>
+            <a href="" title="一个开放源代码的版本控制系统">一个开放源代码的版本控制系统</a>
+        </div>
+        <div id="main">
+            <div id="content">
+                <h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-file-alt icon-large" style="margin:0 10px; color: black;"></i>什么是<b>Subversion</b>？</h2>
+                <table>
+                    <thead align="left">
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SVN是Subversion的简称，它是一个开放源代码的版本控制系统，类似GitHub托管平台。
+在Subversion管理下，文件和目录可以超越时空。Subversion将文件存放在中心版本库里，这个版本库很像一个普通的文件服务器，不同的是，它可以记录每
+一次文件和目录的修改情况，这样就可以借此将数据恢复到以前的版本，并可以查看数据的更改细节。正因为如此，许多人将版本控制系统当作一种神奇的“时间机器”。
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多内容可参考百度百科：什么是<a href="https://baike.baidu.com/item/subversion/7818587?fr=aladdin">Subversion</a>、<a href="http://blog.csdn.net/yuwq123/article/details/52748009">SVN与Git优缺点比较</a></td>
+					</tr>
+                    </thead>
+                </table>
+				<h2 style="font-size: 20px; font-weight: normal; padding:0; height: 49px;" class="file-list"><i class="icon-bell icon-large" style="margin:0 10px; color: black;"></i>SVN有什么用？</h2>
+				<table>
+                    <thead align="left">
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有什么用？这里我们拿svn和ftp的区别来帮助了解SVN。<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传统的ftp修该文件后就会替换原来的内容无法恢复。如果要恢复，还需要自己在替换前做备份。如果遇到多人同时操作同一文件就会很头疼。且无法对相应修改进行记录。<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但svn可以将你每一次的修改内容，差异进行统计。你也可以随时恢复到你想回去的相应版本（即你修改后上传时的每次更新的内容）。如果遇到多人操作了同一文件，svn会自动整合在一起，如果改到了同一行代码，svn会提醒你有冲突，方便去解决冲突。<br />
+						</td>
+					</tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="siderbar">
+				<h4 style="font-weight: normal;" class="mirror-help"><i class="icon-lightbulb icon-large" style="margin:0 10px 0 0; color: black;"></i>SVN代码托管申请</h4>
+				<p><a href="{$Think.const.URL}contact/index.php">点击申请</a></p>
+				<p>软件下载：
+                <ul style="margin-top: -1.5vh;">
+    				<li><a href="">TortoiseSVN_32bit</a></li>
+    				<li><a href="">TortoiseSVN_364bit</a></li>
+    				<li><a href="">Eclipse_v4.7.0</a></li>
+                </ul>
+				</p>
+
+				<h4 style="font-weight: normal;"><i class="icon-link icon-large" style="margin:0 10px 0 30px; color: black;"></i>友情链接</h4>
+				<ul>
+					<li><a href="www.miecu.net">觅库</a></li>
+					<li><a href="www.gdaib.edu.cn">GDAIB</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
